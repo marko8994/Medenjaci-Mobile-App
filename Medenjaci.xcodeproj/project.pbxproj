@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ADBB6E2A25BA47250000D5DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBB6E2925BA47250000D5DA /* AppDelegate.swift */; };
+		ADBB6E2C25BA47250000D5DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBB6E2B25BA47250000D5DA /* SceneDelegate.swift */; };
+		ADBB6E2E25BA47250000D5DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBB6E2D25BA47250000D5DA /* ViewController.swift */; };
+		ADBB6E3125BA47250000D5DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADBB6E2F25BA47250000D5DA /* Main.storyboard */; };
+		ADBB6E3325BA47270000D5DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADBB6E3225BA47270000D5DA /* Assets.xcassets */; };
+		ADBB6E3625BA47270000D5DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADBB6E3425BA47270000D5DA /* LaunchScreen.storyboard */; };
+		ADBB6E4125BA47280000D5DA /* MedenjaciTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBB6E4025BA47280000D5DA /* MedenjaciTests.swift */; };
+		ADBB6E4C25BA47280000D5DA /* MedenjaciUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBB6E4B25BA47280000D5DA /* MedenjaciUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADBB6E3D25BA47280000D5DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADBB6E1E25BA47250000D5DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADBB6E2525BA47250000D5DA;
+			remoteInfo = Medenjaci;
+		};
+		ADBB6E4825BA47280000D5DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADBB6E1E25BA47250000D5DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADBB6E2525BA47250000D5DA;
+			remoteInfo = Medenjaci;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ADBB6E2625BA47250000D5DA /* Medenjaci.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Medenjaci.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADBB6E2925BA47250000D5DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ADBB6E2B25BA47250000D5DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		ADBB6E2D25BA47250000D5DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ADBB6E3025BA47250000D5DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ADBB6E3225BA47270000D5DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADBB6E3525BA47270000D5DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ADBB6E3725BA47270000D5DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADBB6E3C25BA47280000D5DA /* MedenjaciTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedenjaciTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADBB6E4025BA47280000D5DA /* MedenjaciTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedenjaciTests.swift; sourceTree = "<group>"; };
+		ADBB6E4225BA47280000D5DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADBB6E4725BA47280000D5DA /* MedenjaciUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedenjaciUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADBB6E4B25BA47280000D5DA /* MedenjaciUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedenjaciUITests.swift; sourceTree = "<group>"; };
+		ADBB6E4D25BA47280000D5DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADBB6E2325BA47250000D5DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADBB6E3925BA47280000D5DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADBB6E4425BA47280000D5DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ADBB6E1D25BA47250000D5DA = {
+			isa = PBXGroup;
+			children = (
+				ADBB6E2825BA47250000D5DA /* Medenjaci */,
+				ADBB6E3F25BA47280000D5DA /* MedenjaciTests */,
+				ADBB6E4A25BA47280000D5DA /* MedenjaciUITests */,
+				ADBB6E2725BA47250000D5DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ADBB6E2725BA47250000D5DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADBB6E2625BA47250000D5DA /* Medenjaci.app */,
+				ADBB6E3C25BA47280000D5DA /* MedenjaciTests.xctest */,
+				ADBB6E4725BA47280000D5DA /* MedenjaciUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADBB6E2825BA47250000D5DA /* Medenjaci */ = {
+			isa = PBXGroup;
+			children = (
+				ADBB6E2925BA47250000D5DA /* AppDelegate.swift */,
+				ADBB6E2B25BA47250000D5DA /* SceneDelegate.swift */,
+				ADBB6E2D25BA47250000D5DA /* ViewController.swift */,
+				ADBB6E2F25BA47250000D5DA /* Main.storyboard */,
+				ADBB6E3225BA47270000D5DA /* Assets.xcassets */,
+				ADBB6E3425BA47270000D5DA /* LaunchScreen.storyboard */,
+				ADBB6E3725BA47270000D5DA /* Info.plist */,
+			);
+			path = Medenjaci;
+			sourceTree = "<group>";
+		};
+		ADBB6E3F25BA47280000D5DA /* MedenjaciTests */ = {
+			isa = PBXGroup;
+			children = (
+				ADBB6E4025BA47280000D5DA /* MedenjaciTests.swift */,
+				ADBB6E4225BA47280000D5DA /* Info.plist */,
+			);
+			path = MedenjaciTests;
+			sourceTree = "<group>";
+		};
+		ADBB6E4A25BA47280000D5DA /* MedenjaciUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ADBB6E4B25BA47280000D5DA /* MedenjaciUITests.swift */,
+				ADBB6E4D25BA47280000D5DA /* Info.plist */,
+			);
+			path = MedenjaciUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADBB6E2525BA47250000D5DA /* Medenjaci */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADBB6E5025BA47280000D5DA /* Build configuration list for PBXNativeTarget "Medenjaci" */;
+			buildPhases = (
+				ADBB6E2225BA47250000D5DA /* Sources */,
+				ADBB6E2325BA47250000D5DA /* Frameworks */,
+				ADBB6E2425BA47250000D5DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Medenjaci;
+			productName = Medenjaci;
+			productReference = ADBB6E2625BA47250000D5DA /* Medenjaci.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADBB6E3B25BA47280000D5DA /* MedenjaciTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADBB6E5325BA47280000D5DA /* Build configuration list for PBXNativeTarget "MedenjaciTests" */;
+			buildPhases = (
+				ADBB6E3825BA47280000D5DA /* Sources */,
+				ADBB6E3925BA47280000D5DA /* Frameworks */,
+				ADBB6E3A25BA47280000D5DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADBB6E3E25BA47280000D5DA /* PBXTargetDependency */,
+			);
+			name = MedenjaciTests;
+			productName = MedenjaciTests;
+			productReference = ADBB6E3C25BA47280000D5DA /* MedenjaciTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ADBB6E4625BA47280000D5DA /* MedenjaciUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADBB6E5625BA47280000D5DA /* Build configuration list for PBXNativeTarget "MedenjaciUITests" */;
+			buildPhases = (
+				ADBB6E4325BA47280000D5DA /* Sources */,
+				ADBB6E4425BA47280000D5DA /* Frameworks */,
+				ADBB6E4525BA47280000D5DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADBB6E4925BA47280000D5DA /* PBXTargetDependency */,
+			);
+			name = MedenjaciUITests;
+			productName = MedenjaciUITests;
+			productReference = ADBB6E4725BA47280000D5DA /* MedenjaciUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADBB6E1E25BA47250000D5DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					ADBB6E2525BA47250000D5DA = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					ADBB6E3B25BA47280000D5DA = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = ADBB6E2525BA47250000D5DA;
+					};
+					ADBB6E4625BA47280000D5DA = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = ADBB6E2525BA47250000D5DA;
+					};
+				};
+			};
+			buildConfigurationList = ADBB6E2125BA47250000D5DA /* Build configuration list for PBXProject "Medenjaci" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADBB6E1D25BA47250000D5DA;
+			productRefGroup = ADBB6E2725BA47250000D5DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADBB6E2525BA47250000D5DA /* Medenjaci */,
+				ADBB6E3B25BA47280000D5DA /* MedenjaciTests */,
+				ADBB6E4625BA47280000D5DA /* MedenjaciUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADBB6E2425BA47250000D5DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADBB6E3625BA47270000D5DA /* LaunchScreen.storyboard in Resources */,
+				ADBB6E3325BA47270000D5DA /* Assets.xcassets in Resources */,
+				ADBB6E3125BA47250000D5DA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADBB6E3A25BA47280000D5DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADBB6E4525BA47280000D5DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADBB6E2225BA47250000D5DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADBB6E2E25BA47250000D5DA /* ViewController.swift in Sources */,
+				ADBB6E2A25BA47250000D5DA /* AppDelegate.swift in Sources */,
+				ADBB6E2C25BA47250000D5DA /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADBB6E3825BA47280000D5DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADBB6E4125BA47280000D5DA /* MedenjaciTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADBB6E4325BA47280000D5DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADBB6E4C25BA47280000D5DA /* MedenjaciUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADBB6E3E25BA47280000D5DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADBB6E2525BA47250000D5DA /* Medenjaci */;
+			targetProxy = ADBB6E3D25BA47280000D5DA /* PBXContainerItemProxy */;
+		};
+		ADBB6E4925BA47280000D5DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADBB6E2525BA47250000D5DA /* Medenjaci */;
+			targetProxy = ADBB6E4825BA47280000D5DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ADBB6E2F25BA47250000D5DA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADBB6E3025BA47250000D5DA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ADBB6E3425BA47270000D5DA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADBB6E3525BA47270000D5DA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ADBB6E4E25BA47280000D5DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ADBB6E4F25BA47280000D5DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADBB6E5125BA47280000D5DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SA3L24LXCA;
+				INFOPLIST_FILE = Medenjaci/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mladenovicmarkodevelopment.medenjaci;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ADBB6E5225BA47280000D5DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SA3L24LXCA;
+				INFOPLIST_FILE = Medenjaci/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mladenovicmarkodevelopment.medenjaci;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ADBB6E5425BA47280000D5DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SA3L24LXCA;
+				INFOPLIST_FILE = MedenjaciTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mladenovicmarkodevelopment.MedenjaciTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Medenjaci.app/Medenjaci";
+			};
+			name = Debug;
+		};
+		ADBB6E5525BA47280000D5DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SA3L24LXCA;
+				INFOPLIST_FILE = MedenjaciTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mladenovicmarkodevelopment.MedenjaciTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Medenjaci.app/Medenjaci";
+			};
+			name = Release;
+		};
+		ADBB6E5725BA47280000D5DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SA3L24LXCA;
+				INFOPLIST_FILE = MedenjaciUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mladenovicmarkodevelopment.MedenjaciUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Medenjaci;
+			};
+			name = Debug;
+		};
+		ADBB6E5825BA47280000D5DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SA3L24LXCA;
+				INFOPLIST_FILE = MedenjaciUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mladenovicmarkodevelopment.MedenjaciUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Medenjaci;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADBB6E2125BA47250000D5DA /* Build configuration list for PBXProject "Medenjaci" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADBB6E4E25BA47280000D5DA /* Debug */,
+				ADBB6E4F25BA47280000D5DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADBB6E5025BA47280000D5DA /* Build configuration list for PBXNativeTarget "Medenjaci" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADBB6E5125BA47280000D5DA /* Debug */,
+				ADBB6E5225BA47280000D5DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADBB6E5325BA47280000D5DA /* Build configuration list for PBXNativeTarget "MedenjaciTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADBB6E5425BA47280000D5DA /* Debug */,
+				ADBB6E5525BA47280000D5DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADBB6E5625BA47280000D5DA /* Build configuration list for PBXNativeTarget "MedenjaciUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADBB6E5725BA47280000D5DA /* Debug */,
+				ADBB6E5825BA47280000D5DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ADBB6E1E25BA47250000D5DA /* Project object */;
+}
