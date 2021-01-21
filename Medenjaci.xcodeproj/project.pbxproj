@@ -99,12 +99,11 @@
 		ADBB6E2825BA47250000D5DA /* Medenjaci */ = {
 			isa = PBXGroup;
 			children = (
+				ADBB6E6425BA49230000D5DA /* Controllers */,
+				ADBB6E6325BA48E50000D5DA /* UI */,
 				ADBB6E2925BA47250000D5DA /* AppDelegate.swift */,
 				ADBB6E2B25BA47250000D5DA /* SceneDelegate.swift */,
-				ADBB6E2D25BA47250000D5DA /* ViewController.swift */,
-				ADBB6E2F25BA47250000D5DA /* Main.storyboard */,
 				ADBB6E3225BA47270000D5DA /* Assets.xcassets */,
-				ADBB6E3425BA47270000D5DA /* LaunchScreen.storyboard */,
 				ADBB6E3725BA47270000D5DA /* Info.plist */,
 			);
 			path = Medenjaci;
@@ -126,6 +125,23 @@
 				ADBB6E4D25BA47280000D5DA /* Info.plist */,
 			);
 			path = MedenjaciUITests;
+			sourceTree = "<group>";
+		};
+		ADBB6E6325BA48E50000D5DA /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				ADBB6E2F25BA47250000D5DA /* Main.storyboard */,
+				ADBB6E3425BA47270000D5DA /* LaunchScreen.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		ADBB6E6425BA49230000D5DA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ADBB6E2D25BA47250000D5DA /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
