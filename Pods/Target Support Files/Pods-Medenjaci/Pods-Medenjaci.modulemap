@@ -1,0 +1,6 @@
+module Pods_Medenjaci {
+  umbrella header "Pods-Medenjaci-umbrella.h"
+
+  export *
+  module * { export * }
+}
