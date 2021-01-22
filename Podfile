@@ -10,7 +10,7 @@ target 'Medenjaci' do
   #Public third party pods
   #pod 'Toaster'
   pod 'Toaster', :git => 'https://github.com/devxoul/Toaster.git', :branch => 'master'
-  pod 'SwiftGen', '6.1.0'
+  pod 'SwiftGen', '6.4.0'
 
   target 'MedenjaciTests' do
     inherit! :search_paths
