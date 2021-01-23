@@ -1,0 +1,23 @@
+strings:
+- inputs:
+  - Medenjaci/Resources/en.lproj/Localizable.strings
+  outputs:
+  - output: Medenjaci/Resources/SwiftGen/Localization.swift
+    templateName: structured-swift5
+    params:
+        enumName: Strings
+ib:
+- inputs:
+  - Medenjaci/UI
+  outputs:
+  - templateName: scenes-swift5
+    output: Medenjaci/UI/StoryboardScenes.swift
+  - templateName: segues-swift5
+    output: Medenjaci/UI/StoryboardSegues.swift
+xcassets:
+- inputs:
+  - Medenjaci/Resources/Images.xcassets
+  - Medenjaci/Resources/Colors.xcassets
+  outputs:
+  - output: Medenjaci/Resources/SwiftGen/Assets.swift
+    templateName: swift5

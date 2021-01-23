@@ -1,0 +1,29 @@
+PODS:
+  - SwiftGen (6.4.0)
+  - Toaster (2.3.0)
+
+DEPENDENCIES:
+  - SwiftGen (= 6.4.0)
+  - Toaster (from `https://github.com/devxoul/Toaster.git`, branch `master`)
+
+SPEC REPOS:
+  trunk:
+    - SwiftGen
+
+EXTERNAL SOURCES:
+  Toaster:
+    :branch: master
+    :git: https://github.com/devxoul/Toaster.git
+
+CHECKOUT OPTIONS:
+  Toaster:
+    :commit: 0fca711c4083cb921cc0893a7a47836358ebf96b
+    :git: https://github.com/devxoul/Toaster.git
+
+SPEC CHECKSUMS:
+  SwiftGen: 67860cc7c3cfc2ed25b9b74cfd55495fc89f9108
+  Toaster: c3473963c78e8cabbf6ea6f11ad0fdaae6f54987
+
+PODFILE CHECKSUM: 364c1a5ee2b832d2ec610f72a4c536ba89b59240
+
+COCOAPODS: 1.9.3

@@ -1,0 +1,6 @@
+module Pods_Medenjaci_MedenjaciUITests {
+  umbrella header "Pods-Medenjaci-MedenjaciUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
