@@ -82,7 +82,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" name="backgroundColor"/>
+                        <color key="backgroundColor" name="loginBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nno-KW-5s2" secondAttribute="bottom" constant="20" id="0ZB-kr-z8R"/>
                             <constraint firstAttribute="trailing" secondItem="nno-KW-5s2" secondAttribute="trailing" constant="15" id="15n-Xp-y3h"/>
@@ -163,7 +163,7 @@
                                                         </connections>
                                                     </textField>
                                                 </subviews>
-                                                <color key="backgroundColor" name="backgroundColor"/>
+                                                <color key="backgroundColor" name="loginBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="mvQ-bS-yW5" secondAttribute="bottom" id="A4H-GO-b0J"/>
                                                     <constraint firstItem="fVd-FR-ISG" firstAttribute="leading" secondItem="ki3-7u-LAz" secondAttribute="leading" id="BUC-Jf-mLf"/>
@@ -206,7 +206,7 @@
                                                         </connections>
                                                     </textField>
                                                 </subviews>
-                                                <color key="backgroundColor" name="backgroundColor"/>
+                                                <color key="backgroundColor" name="loginBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstItem="sAZ-z0-13p" firstAttribute="leading" secondItem="3J3-rk-Sat" secondAttribute="leading" id="7WV-Q6-c6H"/>
                                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="sAZ-z0-13p" secondAttribute="trailing" constant="10" id="Jqw-i5-VjI"/>
@@ -249,7 +249,7 @@
                                                         </connections>
                                                     </textField>
                                                 </subviews>
-                                                <color key="backgroundColor" name="backgroundColor"/>
+                                                <color key="backgroundColor" name="loginBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstItem="f31-PL-oDM" firstAttribute="top" secondItem="GQd-6X-b5u" secondAttribute="bottom" constant="5" id="B5U-2I-9Eg"/>
                                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="GQd-6X-b5u" secondAttribute="trailing" constant="10" id="QX6-dX-nBO"/>
@@ -292,7 +292,7 @@
                                                         </connections>
                                                     </textField>
                                                 </subviews>
-                                                <color key="backgroundColor" name="backgroundColor"/>
+                                                <color key="backgroundColor" name="loginBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstItem="DYz-vt-IKN" firstAttribute="top" secondItem="dz2-hY-QlV" secondAttribute="bottom" constant="5" id="4Pm-C2-ucq"/>
                                                     <constraint firstItem="dz2-hY-QlV" firstAttribute="top" secondItem="wwW-wI-NZC" secondAttribute="top" id="6WQ-Yp-zVW"/>
@@ -335,7 +335,7 @@
                                                         </connections>
                                                     </textField>
                                                 </subviews>
-                                                <color key="backgroundColor" name="backgroundColor"/>
+                                                <color key="backgroundColor" name="loginBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zG5-6g-Ixp" secondAttribute="trailing" constant="10" id="2a9-tE-6cl"/>
                                                     <constraint firstItem="Wh7-OF-Dbd" firstAttribute="top" secondItem="zG5-6g-Ixp" secondAttribute="bottom" constant="5" id="2oq-f7-RgJ"/>
@@ -378,7 +378,7 @@
                                                         </connections>
                                                     </textField>
                                                 </subviews>
-                                                <color key="backgroundColor" name="backgroundColor"/>
+                                                <color key="backgroundColor" name="loginBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstItem="NMC-bI-Ovm" firstAttribute="top" secondItem="srb-mp-XRm" secondAttribute="top" id="dwY-yw-Hk3"/>
                                                     <constraint firstAttribute="trailing" secondItem="fJ6-O9-NmC" secondAttribute="trailing" id="ejz-vc-UOM"/>
@@ -420,7 +420,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="awN-Zr-tRd"/>
-                        <color key="backgroundColor" name="backgroundColor"/>
+                        <color key="backgroundColor" name="loginBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="gHs-tC-8Sm" firstAttribute="top" secondItem="awN-Zr-tRd" secondAttribute="top" id="IgA-rZ-ARq"/>
                             <constraint firstItem="gHs-tC-8Sm" firstAttribute="leading" secondItem="sag-X0-Mx0" secondAttribute="leading" id="fr1-Ww-gqA"/>
@@ -517,7 +517,7 @@
                                                         </connections>
                                                     </textField>
                                                 </subviews>
-                                                <color key="backgroundColor" name="backgroundColor"/>
+                                                <color key="backgroundColor" name="loginBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstItem="Lai-dx-iKz" firstAttribute="leading" secondItem="rFR-cW-2Ki" secondAttribute="leading" id="CLy-I0-5J7"/>
                                                     <constraint firstItem="btA-UG-A2d" firstAttribute="top" secondItem="Lai-dx-iKz" secondAttribute="bottom" constant="5" id="Li5-TH-p9X"/>
@@ -571,7 +571,7 @@
                                                         </connections>
                                                     </button>
                                                 </subviews>
-                                                <color key="backgroundColor" name="backgroundColor"/>
+                                                <color key="backgroundColor" name="loginBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="Sfz-Do-UkD" secondAttribute="trailing" id="0M2-M4-AwK"/>
                                                     <constraint firstItem="O2c-Qr-Jnp" firstAttribute="top" secondItem="1E1-uX-eRO" secondAttribute="bottom" constant="5" id="6aq-c4-4KA"/>
@@ -619,7 +619,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jG5-Th-WaW"/>
-                        <color key="backgroundColor" name="backgroundColor"/>
+                        <color key="backgroundColor" name="loginBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="Z9J-zq-jb9" secondAttribute="bottom" id="8EE-AK-oSv"/>
                             <constraint firstItem="Z9J-zq-jb9" firstAttribute="leading" secondItem="W89-Nn-m1s" secondAttribute="leading" id="QVX-0E-EK3"/>
@@ -685,7 +685,7 @@
                                                 </connections>
                                             </textField>
                                         </subviews>
-                                        <color key="backgroundColor" name="backgroundColor"/>
+                                        <color key="backgroundColor" name="loginBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="BRS-aj-wH8" firstAttribute="leading" secondItem="UOH-DV-8e0" secondAttribute="leading" id="3gU-tN-1ti"/>
                                             <constraint firstAttribute="trailing" secondItem="dpS-z2-ATS" secondAttribute="trailing" id="CYZ-5e-A4A"/>
@@ -718,7 +718,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Vel-mf-hNO"/>
-                        <color key="backgroundColor" name="backgroundColor"/>
+                        <color key="backgroundColor" name="loginBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="SJz-KD-ThP" firstAttribute="leading" secondItem="3P3-TN-gDl" secondAttribute="leading" id="Owz-SI-fHP"/>
                             <constraint firstItem="SJz-KD-ThP" firstAttribute="top" secondItem="Vel-mf-hNO" secondAttribute="top" constant="50" id="bEh-zN-3kJ"/>
@@ -738,11 +738,11 @@
         </scene>
     </scenes>
     <resources>
-        <namedColor name="backgroundColor">
+        <namedColor name="loginBackgroundColor">
             <color red="0.92156862745098034" green="0.68627450980392157" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="placeholderTextColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.23499999940395355" green="0.23499999940395355" blue="0.2630000114440918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="primaryButton">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
