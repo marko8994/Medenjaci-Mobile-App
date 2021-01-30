@@ -1,0 +1,42 @@
+{
+  "highlightedProductsImageNames": [
+    "product-1",
+    "product-3"
+  ],
+  "categories": [
+    {
+      "name": "Honey products",
+      "products": [
+        {
+          "uid": "1",
+          "name": "Linden honey",
+          "price": "10$",
+          "imageName": "product-1"
+        },
+        {
+          "uid": "2",
+          "name": "Acacia honey",
+          "price": "12$",
+          "imageName": "product-2"
+        }
+      ]
+    },
+    {
+      "name": "Propolist products",
+      "products": [
+        {
+          "uid": "3",
+          "name": "Propolis drops",
+          "price": "5$",
+          "imageName": "product-3"
+        },
+        {
+          "uid": "4",
+          "name": "Propolis syryp",
+          "price": "8$",
+          "imageName": "product-4"
+        }
+      ]
+    }
+  ]
+}
