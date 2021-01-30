@@ -21,3 +21,5 @@ xcassets:
   outputs:
   - output: Medenjaci/Resources/SwiftGen/Assets.swift
     templateName: swift5
+    params:
+        enumName: Assets

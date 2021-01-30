@@ -18,10 +18,16 @@ internal typealias AssetColorTypeAlias = ColorAsset.Color
 // MARK: - Asset Catalogs
 
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
-internal enum Asset {
+internal enum Assets {
   internal enum Colors {
     internal static let backgroundColor = ColorAsset(name: "backgroundColor")
+    internal static let navigationBarColor = ColorAsset(name: "navigationBarColor")
+    internal static let navigationBarTintColor = ColorAsset(name: "navigationBarTintColor")
+    internal static let placeholderTextColor = ColorAsset(name: "placeholderTextColor")
+    internal static let primaryButton = ColorAsset(name: "primaryButton")
+    internal static let primaryButtonTextColor = ColorAsset(name: "primaryButtonTextColor")
     internal static let primaryTextColor = ColorAsset(name: "primaryTextColor")
+    internal static let textFieldBackgroundColor = ColorAsset(name: "textFieldBackgroundColor")
   }
   internal enum Images {
   }
