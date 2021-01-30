@@ -10,10 +10,12 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: Assets.Colors.navigationBarTintColor.color,
+                                                            .font: UIFont.systemFont(ofSize: 22, weight: .semibold)]
+        UINavigationBar.appearance().barTintColor = Assets.Colors.navigationBarColor.color
+        UINavigationBar.appearance().tintColor = Assets.Colors.navigationBarTintColor.color
         return true
     }
 

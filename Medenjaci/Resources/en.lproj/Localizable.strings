@@ -5,3 +5,23 @@
   Created by Marko Mladenovic on 22/01/2021.
   
 */
+
+"Welcome.Title" = "Welcome to";
+"Welcome.Description" = "Your favorite honey products store";
+"Welcome.ExistingAccount" = "Already have an account?";
+"Common.Register" = "Register";
+"Common.Login" = "Login";
+"Common.Name" = "Name";
+"Common.Email" = "Email";
+"Common.Address" = "Address";
+"Common.PhoneNumber" = "Phone number";
+"Common.Password" = "Password";
+"Common.RepeatPassword" = "Repeat password";
+"Common.ForgotPassword" = "Forgot password?";
+"Common.ResetPassword" = "Reset password";
+"Placeholder.Name" = "Enter your name";
+"Placeholder.Email" = "Enter your email";
+"Placeholder.Address" = "Enter your address";
+"Placeholder.PhoneNumber" = "Enter your phone number";
+"Placeholder.Password" = "Enter your password";
+"Placeholder.RepeatPassword" = "Repeat your password";
