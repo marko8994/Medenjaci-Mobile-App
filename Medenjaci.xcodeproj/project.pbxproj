@@ -12,6 +12,7 @@
 		AD16D0CD25C4F26900CA9C57 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16D0CC25C4F26900CA9C57 /* LoginViewController.swift */; };
 		AD16D0D225C4F5D700CA9C57 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16D0D125C4F5D700CA9C57 /* ResetPasswordViewController.swift */; };
 		AD16D0D725C4F92400CA9C57 /* RegistrationFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16D0D625C4F92400CA9C57 /* RegistrationFlowViewController.swift */; };
+		AD16D0E525C4FC7900CA9C57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD16D0E425C4FC7900CA9C57 /* Main.storyboard */; };
 		AD5FEF0D25C1A6DE003E2472 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5FEF0C25C1A6DE003E2472 /* RegistrationViewController.swift */; };
 		ADBB6E2A25BA47250000D5DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBB6E2925BA47250000D5DA /* AppDelegate.swift */; };
 		ADBB6E2C25BA47250000D5DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBB6E2B25BA47250000D5DA /* SceneDelegate.swift */; };
@@ -59,6 +60,7 @@
 		AD16D0CC25C4F26900CA9C57 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AD16D0D125C4F5D700CA9C57 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		AD16D0D625C4F92400CA9C57 /* RegistrationFlowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFlowViewController.swift; sourceTree = "<group>"; };
+		AD16D0E425C4FC7900CA9C57 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		AD5FEF0C25C1A6DE003E2472 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		ADBB6E2625BA47250000D5DA /* Medenjaci.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Medenjaci.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADBB6E2925BA47250000D5DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 				ADBB6EF725BA55B70000D5DA /* StoryboardSegues.swift */,
 				ADBB6E2F25BA47250000D5DA /* Registration.storyboard */,
 				ADBB6E3425BA47270000D5DA /* LaunchScreen.storyboard */,
+				AD16D0E425C4FC7900CA9C57 /* Main.storyboard */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 				ADBB6EB125BA4F730000D5DA /* Colors.xcassets in Resources */,
 				ADBB6E3625BA47270000D5DA /* LaunchScreen.storyboard in Resources */,
 				ADBB6EB525BA4FAC0000D5DA /* Localizable.strings in Resources */,
+				AD16D0E525C4FC7900CA9C57 /* Main.storyboard in Resources */,
 				ADBB6E3325BA47270000D5DA /* Images.xcassets in Resources */,
 				ADBB6E3125BA47250000D5DA /* Registration.storyboard in Resources */,
 			);

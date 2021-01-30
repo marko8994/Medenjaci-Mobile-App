@@ -41,5 +41,15 @@ class LoginViewController: RegistrationFlowViewController {
         loginButton.setTitle(Strings.Common.login.uppercased(), for: .normal)
         forgotPasswordButton.setTitle(Strings.Common.forgotPassword, for: .normal)
     }
+    
+    @IBAction func loginButtonAction(_ sender: Any) {
+        let viewController = StoryboardScene.Main.initialScene.instantiate()
+        let window = UIApplication.shared.windows.first!
+        window.windowLevel = UIWindow.Level.normal
+        window.rootViewController?.dismiss(animated: false, completion: nil)
+        window.rootViewController?.removeFromParent()
+        window.rootViewController = viewController
+    }
+    
 
 }
