@@ -13,6 +13,7 @@
 		AD16D0D225C4F5D700CA9C57 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16D0D125C4F5D700CA9C57 /* ResetPasswordViewController.swift */; };
 		AD16D0D725C4F92400CA9C57 /* RegistrationFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16D0D625C4F92400CA9C57 /* RegistrationFlowViewController.swift */; };
 		AD16D0E525C4FC7900CA9C57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD16D0E425C4FC7900CA9C57 /* Main.storyboard */; };
+		AD16D0EE25C5A54B00CA9C57 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16D0ED25C5A54B00CA9C57 /* HomeTableViewController.swift */; };
 		AD5FEF0D25C1A6DE003E2472 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5FEF0C25C1A6DE003E2472 /* RegistrationViewController.swift */; };
 		ADBB6E2A25BA47250000D5DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBB6E2925BA47250000D5DA /* AppDelegate.swift */; };
 		ADBB6E2C25BA47250000D5DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBB6E2B25BA47250000D5DA /* SceneDelegate.swift */; };
@@ -61,6 +62,7 @@
 		AD16D0D125C4F5D700CA9C57 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		AD16D0D625C4F92400CA9C57 /* RegistrationFlowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFlowViewController.swift; sourceTree = "<group>"; };
 		AD16D0E425C4FC7900CA9C57 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		AD16D0ED25C5A54B00CA9C57 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		AD5FEF0C25C1A6DE003E2472 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		ADBB6E2625BA47250000D5DA /* Medenjaci.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Medenjaci.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADBB6E2925BA47250000D5DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +127,18 @@
 				8D1A9458B2CA0C5FE2468FA6 /* Pods-MedenjaciTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		AD16D0EC25C5A52900CA9C57 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				ADBB6E2D25BA47250000D5DA /* WelcomeViewController.swift */,
+				AD16D0D625C4F92400CA9C57 /* RegistrationFlowViewController.swift */,
+				AD5FEF0C25C1A6DE003E2472 /* RegistrationViewController.swift */,
+				AD16D0CC25C4F26900CA9C57 /* LoginViewController.swift */,
+				AD16D0D125C4F5D700CA9C57 /* ResetPasswordViewController.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 		ADBB6E1D25BA47250000D5DA = {
@@ -195,11 +209,8 @@
 		ADBB6E6425BA49230000D5DA /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				ADBB6E2D25BA47250000D5DA /* WelcomeViewController.swift */,
-				AD16D0D625C4F92400CA9C57 /* RegistrationFlowViewController.swift */,
-				AD5FEF0C25C1A6DE003E2472 /* RegistrationViewController.swift */,
-				AD16D0CC25C4F26900CA9C57 /* LoginViewController.swift */,
-				AD16D0D125C4F5D700CA9C57 /* ResetPasswordViewController.swift */,
+				AD16D0EC25C5A52900CA9C57 /* Onboarding */,
+				AD16D0ED25C5A54B00CA9C57 /* HomeTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -440,6 +451,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD16D0EE25C5A54B00CA9C57 /* HomeTableViewController.swift in Sources */,
 				AD16D0CD25C4F26900CA9C57 /* LoginViewController.swift in Sources */,
 				ADBB6EF925BA55B70000D5DA /* StoryboardSegues.swift in Sources */,
 				ADBB6E2E25BA47250000D5DA /* WelcomeViewController.swift in Sources */,
