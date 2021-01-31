@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                                             .font: UIFont.systemFont(ofSize: 22, weight: .semibold)]
         UINavigationBar.appearance().barTintColor = Assets.Colors.navigationBarColor.color
         UINavigationBar.appearance().tintColor = Assets.Colors.navigationBarTintColor.color
+        UINavigationBar.appearance().isTranslucent = false
         return true
     }
 

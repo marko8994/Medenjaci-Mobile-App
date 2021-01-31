@@ -46,7 +46,7 @@ class HomeTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         if let headerView = view as? UITableViewHeaderFooterView {
-            headerView.contentView.backgroundColor = Assets.Colors.navigationBarColor.color
+            headerView.contentView.backgroundColor = Assets.Colors.cartCellBackgroundColor.color
             headerView.layer.cornerRadius = headerView.frame.height / 2
             headerView.layer.masksToBounds = true
             headerView.textLabel?.textColor = Assets.Colors.primaryTextColor.color

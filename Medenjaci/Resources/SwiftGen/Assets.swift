@@ -23,6 +23,7 @@ internal typealias AssetImageTypeAlias = ImageAsset.Image
 internal enum Assets {
   internal enum Colors {
     internal static let backgroundColor = ColorAsset(name: "backgroundColor")
+    internal static let cartCellBackgroundColor = ColorAsset(name: "cartCellBackgroundColor")
     internal static let cellBorderColor = ColorAsset(name: "cellBorderColor")
     internal static let loginBackgroundColor = ColorAsset(name: "loginBackgroundColor")
     internal static let navigationBarColor = ColorAsset(name: "navigationBarColor")
@@ -31,6 +32,8 @@ internal enum Assets {
     internal static let primaryButton = ColorAsset(name: "primaryButton")
     internal static let primaryButtonTextColor = ColorAsset(name: "primaryButtonTextColor")
     internal static let primaryTextColor = ColorAsset(name: "primaryTextColor")
+    internal static let roundedTextFieldBackgroundColor = ColorAsset(name: "roundedTextFieldBackgroundColor")
+    internal static let separatorColor = ColorAsset(name: "separatorColor")
     internal static let tabBarTintColor = ColorAsset(name: "tabBarTintColor")
     internal static let textFieldBackgroundColor = ColorAsset(name: "textFieldBackgroundColor")
   }
