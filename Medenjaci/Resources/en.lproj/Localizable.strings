@@ -40,5 +40,5 @@
 "Placeholder.OrderNotes" = "Enter your order notes";
 "Section.CurrentOrder" = "Current order summary";
 "Section.PreviousOrders" = "Previous orders";
-"EmptySection.EmptyCurrentOrder" = "You have not added anything to your cart. Revisit home page and choose your products.";
+"EmptySection.EmptyCurrentOrder" = "Cart is empty. Go to home page and add products.";
 "EmptySection.NoOlderOrders" = "You don't have old orders.";
