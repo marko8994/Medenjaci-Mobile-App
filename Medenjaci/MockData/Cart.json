@@ -1,0 +1,12 @@
+[
+  {
+    "date": "25/10/2020",
+    "totalAmount": "10$",
+    "status": "delivered"
+  },
+  {
+    "date": "15/08/2020",
+    "totalAmount": "10$",
+    "status": "rejected"
+  }
+]
