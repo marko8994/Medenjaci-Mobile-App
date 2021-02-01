@@ -23,14 +23,25 @@ class SetUpUserInfoViewController: RegistrationFlowViewController {
     @IBOutlet weak var repeatPasswordLabel: UILabel!
     @IBOutlet weak var repeatPasswordTextField: UITextField!
     @IBOutlet weak var registerButton: UIButton!
+    @IBOutlet weak var passwordContainer: UIView!
+    @IBOutlet weak var repeatPasswordContainer: UIView!
+    
+    var isRegisterScreen = true
         
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = Strings.Common.register
         setUpLabels()
         setUpPlaceholders()
-        registerButton.setTitle(Strings.Common.register.uppercased(), for: .normal)
         registerForNotifications()
+        if isRegisterScreen {
+            title = Strings.Title.register
+            registerButton.setTitle(Strings.Title.register.uppercased(), for: .normal)
+        } else {
+            title = Strings.Title.changePersonalInfo
+            passwordContainer.isHidden = true
+            repeatPasswordContainer.isHidden = true
+            registerButton.setTitle(Strings.Title.changePersonalInfo.uppercased(), for: .normal)
+        }
     }
     
     // MARK: Interface setup

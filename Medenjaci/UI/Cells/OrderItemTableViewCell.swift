@@ -7,23 +7,12 @@
 
 import UIKit
 
-class OrderItemTableViewCell: UITableViewCell {
+class OrderItemTableViewCell: StyledTableViewCell {
 
     @IBOutlet weak var primaryLabel: UILabel!
     @IBOutlet weak var secondaryLabel: UILabel!
     @IBOutlet weak var tertiaryLabel: UILabel!
     @IBOutlet weak var quaternaryLabel: UILabel!
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        contentView.layer.cornerRadius = 15
-        contentView.backgroundColor = Assets.Colors.cartCellBackgroundColor.color
-    }
-    
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 5, left: 15, bottom: 5, right: 15))
-    }
 
     public func configure(with orderItem: OrderItem) {
         primaryLabel.text = orderItem.productName

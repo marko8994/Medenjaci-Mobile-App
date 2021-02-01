@@ -16,10 +16,10 @@ class ResetPasswordViewController: UIViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = Strings.Common.resetPassword
+        title = Strings.Title.resetPassword
         emailLabel.text = Strings.Common.email
         emailTextField.placeholder = Strings.Placeholder.email
-        resetPasswordButton.setTitle(Strings.Common.resetPassword.uppercased(), for: .normal)
+        resetPasswordButton.setTitle(Strings.Title.resetPassword.uppercased(), for: .normal)
         setUpGestureRecognizer()
     }
     

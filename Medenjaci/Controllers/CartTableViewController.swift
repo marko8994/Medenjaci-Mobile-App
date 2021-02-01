@@ -9,6 +9,7 @@ import UIKit
 
 enum CartSection: Int {
     case orderItems = 0
+    case orderAmount
     case orderSummary
     case oldOrders
 }
@@ -18,7 +19,7 @@ class CartTableViewController: UITableViewController {
     var sections: [CartSection] {
         var sections = [CartSection]()
         if currentOrder != nil {
-            sections.append(contentsOf: [.orderItems, .orderSummary])
+            sections.append(contentsOf: [.orderItems, .orderAmount, .orderSummary])
         } else {
             sections.append(.orderItems)
         }
@@ -44,7 +45,6 @@ class CartTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         return sections.count
     }
@@ -58,7 +58,7 @@ class CartTableViewController: UITableViewController {
             } else {
                 return 1
             }
-        case .orderSummary:
+        case .orderAmount, .orderSummary:
             return 1
         case .oldOrders:
             if let oldOrders = oldOrders {
@@ -87,10 +87,14 @@ class CartTableViewController: UITableViewController {
                 cell.textLabel?.text = Strings.EmptySection.emptyCurrentOrder
                 return cell
             }
+        case .orderAmount:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "orderAmountCell", for: indexPath)
+            cell.textLabel?.text = Strings.Common.totalAmount(currentOrder?.totalAmount ?? "")
+            return cell
         case .orderSummary:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "orderSummaryCell", for: indexPath)
-                as? OrderSummaryTableViewCell else { break }
-            cell.totalAmountLabel.text = Strings.Common.totalAmount(currentOrder?.totalAmount ?? "")
+                as? TextViewAndButtonTableViewCell else { break }
+            cell.configureForOrderSummary()
             return cell
         case .oldOrders:
             if let oldOrders = oldOrders {
@@ -111,8 +115,10 @@ class CartTableViewController: UITableViewController {
         switch sections[section] {
         case .orderItems:
             return Strings.Section.currentOrder
-        case .orderSummary:
+        case .orderAmount:
             return nil
+        case .orderSummary:
+            return Strings.Section.orderNotes
         case .oldOrders:
             return Strings.Section.previousOrders
         }
@@ -120,7 +126,7 @@ class CartTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         if let headerView = view as? UITableViewHeaderFooterView {
-            headerView.contentView.backgroundColor = Assets.Colors.cartCellBackgroundColor.color
+            headerView.contentView.backgroundColor = Assets.Colors.sectionHeaderBackgroundColor.color
             headerView.layer.cornerRadius = headerView.frame.height / 2
             headerView.layer.masksToBounds = true
             headerView.textLabel?.textColor = Assets.Colors.primaryTextColor.color
