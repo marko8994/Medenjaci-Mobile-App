@@ -56,9 +56,7 @@ class HomeTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         if let headerView = view as? UITableViewHeaderFooterView {
-            headerView.contentView.backgroundColor = Assets.Colors.sectionHeaderBackgroundColor.color
-            headerView.layer.cornerRadius = headerView.frame.height / 2
-            headerView.layer.masksToBounds = true
+            headerView.contentView.backgroundColor = Assets.Colors.backgroundColor.color
             headerView.textLabel?.textColor = Assets.Colors.primaryTextColor.color
             headerView.textLabel?.font = UIFont.systemFont(ofSize: 20, weight: .bold)
         }

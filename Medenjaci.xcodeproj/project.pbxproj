@@ -25,9 +25,8 @@
 		AD16D15425C61C0400CA9C57 /* CartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16D15325C61C0400CA9C57 /* CartTableViewController.swift */; };
 		AD16D15925C6228200CA9C57 /* Cart.json in Resources */ = {isa = PBXBuildFile; fileRef = AD16D15825C6228200CA9C57 /* Cart.json */; };
 		AD16D15E25C6246500CA9C57 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16D15D25C6246500CA9C57 /* Order.swift */; };
-		AD16D16325C629D700CA9C57 /* OrderItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16D16225C629D700CA9C57 /* OrderItemTableViewCell.swift */; };
-		AD16D16825C629F200CA9C57 /* TextViewAndButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16D16725C629F200CA9C57 /* TextViewAndButtonTableViewCell.swift */; };
-		AD16D17825C767CE00CA9C57 /* DoubleButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16D17725C767CE00CA9C57 /* DoubleButtonCell.swift */; };
+		AD16D16325C629D700CA9C57 /* QuaternaryTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16D16225C629D700CA9C57 /* QuaternaryTableCell.swift */; };
+		AD16D16825C629F200CA9C57 /* TextFieldTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16D16725C629F200CA9C57 /* TextFieldTableCell.swift */; };
 		AD16D18625C76C5000CA9C57 /* StyledTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16D18525C76C5000CA9C57 /* StyledTableViewCell.swift */; };
 		AD5FEF0D25C1A6DE003E2472 /* SetUpUserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5FEF0C25C1A6DE003E2472 /* SetUpUserInfoViewController.swift */; };
 		AD947C7925C7718F00FFFB1D /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD947C7825C7718F00FFFB1D /* ProfileTableViewController.swift */; };
@@ -100,9 +99,8 @@
 		AD16D15325C61C0400CA9C57 /* CartTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewController.swift; sourceTree = "<group>"; };
 		AD16D15825C6228200CA9C57 /* Cart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Cart.json; sourceTree = "<group>"; };
 		AD16D15D25C6246500CA9C57 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
-		AD16D16225C629D700CA9C57 /* OrderItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OrderItemTableViewCell.swift; path = Medenjaci/UI/Cells/OrderItemTableViewCell.swift; sourceTree = SOURCE_ROOT; };
-		AD16D16725C629F200CA9C57 /* TextViewAndButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewAndButtonTableViewCell.swift; sourceTree = "<group>"; };
-		AD16D17725C767CE00CA9C57 /* DoubleButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleButtonCell.swift; sourceTree = "<group>"; };
+		AD16D16225C629D700CA9C57 /* QuaternaryTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuaternaryTableCell.swift; path = Medenjaci/UI/Cells/QuaternaryTableCell.swift; sourceTree = SOURCE_ROOT; };
+		AD16D16725C629F200CA9C57 /* TextFieldTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableCell.swift; sourceTree = "<group>"; };
 		AD16D18525C76C5000CA9C57 /* StyledTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledTableViewCell.swift; sourceTree = "<group>"; };
 		AD5FEF0C25C1A6DE003E2472 /* SetUpUserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUpUserInfoViewController.swift; sourceTree = "<group>"; };
 		AD947C7825C7718F00FFFB1D /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
@@ -211,9 +209,8 @@
 				AD16D11E25C5CB8000CA9C57 /* CellDataSource */,
 				AD16D10C25C5BF8400CA9C57 /* CollectionContainerTableViewCell.swift */,
 				AD16D11925C5C0F400CA9C57 /* BasicCollectionCell.swift */,
-				AD16D16225C629D700CA9C57 /* OrderItemTableViewCell.swift */,
-				AD16D16725C629F200CA9C57 /* TextViewAndButtonTableViewCell.swift */,
-				AD16D17725C767CE00CA9C57 /* DoubleButtonCell.swift */,
+				AD16D16225C629D700CA9C57 /* QuaternaryTableCell.swift */,
+				AD16D16725C629F200CA9C57 /* TextFieldTableCell.swift */,
 				AD16D18525C76C5000CA9C57 /* StyledTableViewCell.swift */,
 				AD947C9725C7884000FFFB1D /* TableSpotlightCell.swift */,
 				AD947C9C25C78AC700FFFB1D /* SingleButtonCell.swift */,
@@ -575,7 +572,7 @@
 				AD947C7E25C7731F00FFFB1D /* User.swift in Sources */,
 				AD16D12725C5CCC000CA9C57 /* MockData.swift in Sources */,
 				AD16D15E25C6246500CA9C57 /* Order.swift in Sources */,
-				AD16D16825C629F200CA9C57 /* TextViewAndButtonTableViewCell.swift in Sources */,
+				AD16D16825C629F200CA9C57 /* TextFieldTableCell.swift in Sources */,
 				AD947C7925C7718F00FFFB1D /* ProfileTableViewController.swift in Sources */,
 				ADBB6EF925BA55B70000D5DA /* StoryboardSegues.swift in Sources */,
 				ADBB6E2E25BA47250000D5DA /* WelcomeViewController.swift in Sources */,
@@ -584,7 +581,6 @@
 				AD947C8625C7817100FFFB1D /* ChangePasswordViewController.swift in Sources */,
 				AD947C9D25C78AC700FFFB1D /* SingleButtonCell.swift in Sources */,
 				AD5FEF0D25C1A6DE003E2472 /* SetUpUserInfoViewController.swift in Sources */,
-				AD16D17825C767CE00CA9C57 /* DoubleButtonCell.swift in Sources */,
 				AD16D10625C5BECD00CA9C57 /* Product.swift in Sources */,
 				AD16D0D725C4F92400CA9C57 /* RegistrationFlowViewController.swift in Sources */,
 				ADBB6EFA25BA55B70000D5DA /* StoryboardScenes.swift in Sources */,
@@ -596,7 +592,7 @@
 				AD947C8E25C7860100FFFB1D /* ProductDetailsTableViewController.swift in Sources */,
 				AD16D0D225C4F5D700CA9C57 /* ResetPasswordViewController.swift in Sources */,
 				ADBB6EF325BA55AC0000D5DA /* Assets.swift in Sources */,
-				AD16D16325C629D700CA9C57 /* OrderItemTableViewCell.swift in Sources */,
+				AD16D16325C629D700CA9C57 /* QuaternaryTableCell.swift in Sources */,
 				ADBB6E2C25BA47250000D5DA /* SceneDelegate.swift in Sources */,
 				AD16D11525C5C03B00CA9C57 /* CollectionDataSource.swift in Sources */,
 			);

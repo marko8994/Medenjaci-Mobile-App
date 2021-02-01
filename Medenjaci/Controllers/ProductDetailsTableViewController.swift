@@ -76,7 +76,7 @@ class ProductDetailsTableViewController: UITableViewController {
         case .orderButton:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "orderButtonCell", for: indexPath)
                 as? SingleButtonCell else { break }
-            cell.configureForOrder()
+            cell.buttonTitle = Strings.Title.addToCart
             return cell
         }
         fatalError("Couldn't find cell for index path: \(String(describing: indexPath))")
@@ -98,8 +98,6 @@ class ProductDetailsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         if let headerView = view as? UITableViewHeaderFooterView {
             headerView.contentView.backgroundColor = Assets.Colors.backgroundColor.color
-//            headerView.layer.cornerRadius = headerView.frame.height / 2
-//            headerView.layer.masksToBounds = true
             headerView.textLabel?.textColor = Assets.Colors.primaryTextColor.color
             headerView.textLabel?.font = UIFont.systemFont(ofSize: 20, weight: .bold)
         }

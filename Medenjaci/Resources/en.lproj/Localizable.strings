@@ -14,8 +14,10 @@
 "Title.ChangePersonalInfo" = "Change personal info";
 "Title.ChangePassword" = "Change password";
 "Title.Login" = "Login";
+"Title.Order" = "Order";
 "Title.ResetPassword" = "Reset password";
 "Title.SendRequest" = "Send request";
+"Title.AddToCart" = "Add to cart";
 "Common.Name" = "Name";
 "Common.Email" = "Email";
 "Common.Address" = "Address";
@@ -27,9 +29,9 @@
 "Common.RepeatNewPassword" = "Repeat new password";
 "Common.Cart" = "Cart";
 "Common.TotalAmount" = "Total amount: %@";
-"Common.Order" = "Order";
 "Common.Quantity" = "Quantity: %d";
 "Common.UnitPrice" = "Unit price: %@";
+"Common.OrderNotes" = "Order notes:";
 "Common.Date" = "Date: %@";
 "Common.Amount" = "Amount: %@";
 "Common.Status" = "Status: %@";
@@ -48,7 +50,6 @@
 "Placeholder.NewPassword" = "Enter your new password";
 "Placeholder.RepeatNewPassword" = "Enter your new password again";
 "Section.CurrentOrder" = "Current order summary";
-"Section.OrderNotes" = "Order notes:";
 "Section.PreviousOrders" = "Previous orders";
 "Section.PersonalInfo" = "Personal info";
 "Section.Description" = "Description";

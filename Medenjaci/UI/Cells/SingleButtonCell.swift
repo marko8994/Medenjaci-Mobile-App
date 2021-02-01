@@ -11,13 +11,21 @@ class SingleButtonCell: UITableViewCell {
 
     @IBOutlet weak var button: UIButton!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    var buttonAction: (() -> Void)?
+    
+    var buttonTitle: String? {
+        didSet {
+            button.setTitle(buttonTitle?.uppercased(), for: .normal)
+        }
     }
     
-    public func configureForOrder() {
-        button.setTitle(Strings.Common.order.uppercased(), for: .normal)
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        button.addTarget(self, action: #selector(buttonTap), for: .touchUpInside)
+    }
+
+    @objc private func buttonTap() {
+        buttonAction?()
     }
 
 }

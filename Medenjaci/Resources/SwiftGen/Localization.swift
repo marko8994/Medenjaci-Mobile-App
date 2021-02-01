@@ -34,8 +34,8 @@ internal enum Strings {
     internal static let name = Strings.tr("Localizable", "Common.Name")
     /// New password
     internal static let newPassword = Strings.tr("Localizable", "Common.NewPassword")
-    /// Order
-    internal static let order = Strings.tr("Localizable", "Common.Order")
+    /// Order notes:
+    internal static let orderNotes = Strings.tr("Localizable", "Common.OrderNotes")
     /// Password
     internal static let password = Strings.tr("Localizable", "Common.Password")
     /// Pending
@@ -105,8 +105,6 @@ internal enum Strings {
     internal static let customerSupport = Strings.tr("Localizable", "Section.CustomerSupport")
     /// Description
     internal static let description = Strings.tr("Localizable", "Section.Description")
-    /// Order notes:
-    internal static let orderNotes = Strings.tr("Localizable", "Section.OrderNotes")
     /// Personal info
     internal static let personalInfo = Strings.tr("Localizable", "Section.PersonalInfo")
     /// Previous orders
@@ -116,12 +114,16 @@ internal enum Strings {
   }
 
   internal enum Title {
+    /// Add to cart
+    internal static let addToCart = Strings.tr("Localizable", "Title.AddToCart")
     /// Change password
     internal static let changePassword = Strings.tr("Localizable", "Title.ChangePassword")
     /// Change personal info
     internal static let changePersonalInfo = Strings.tr("Localizable", "Title.ChangePersonalInfo")
     /// Login
     internal static let login = Strings.tr("Localizable", "Title.Login")
+    /// Order
+    internal static let order = Strings.tr("Localizable", "Title.Order")
     /// Profile
     internal static let profile = Strings.tr("Localizable", "Title.Profile")
     /// Register
