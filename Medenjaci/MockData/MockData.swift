@@ -12,6 +12,7 @@ public class MockData {
     static let shared = MockData()
     
     var currentOrder: Order?
+    var currentUser: User = User(name: "Marko", email: "mmm@gmail.com", address: "Rimska", phoneNumber: "381612345678", password: "fewfewfew")
     
     func loadData<T: Decodable>(_ filename: String) -> T {
         let data: Data

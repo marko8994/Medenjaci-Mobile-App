@@ -28,6 +28,8 @@ internal enum StoryboardScene {
     internal static let storyboardName = "Registration"
 
     internal static let initialScene = InitialSceneType<UIKit.UINavigationController>(storyboard: Registration.self)
+
+    internal static let setUpUserInfoVC = SceneType<SetUpUserInfoViewController>(storyboard: Registration.self, identifier: "SetUpUserInfoVC")
   }
 }
 // swiftlint:enable explicit_type_interface identifier_name line_length type_body_length type_name

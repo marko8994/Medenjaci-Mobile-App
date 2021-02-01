@@ -120,7 +120,7 @@
         <!--Register View Controller-->
         <scene sceneID="H2g-Bp-L2u">
             <objects>
-                <viewController id="b94-4x-NpH" userLabel="Register View Controller" customClass="RegistrationViewController" customModule="Medenjaci" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SetUpUserInfoVC" id="b94-4x-NpH" userLabel="Register View Controller" customClass="SetUpUserInfoViewController" customModule="Medenjaci" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sag-X0-Mx0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -436,11 +436,13 @@
                         <outlet property="emailTextField" destination="89P-42-ZEX" id="4EH-wa-mlr"/>
                         <outlet property="nameLabel" destination="fVd-FR-ISG" id="JYQ-Gw-o5i"/>
                         <outlet property="nameTextField" destination="mvQ-bS-yW5" id="mec-LH-X52"/>
+                        <outlet property="passwordContainer" destination="TYf-n6-PKb" id="ibo-mg-maX"/>
                         <outlet property="passwordLabel" destination="zG5-6g-Ixp" id="ZnZ-EW-BHZ"/>
                         <outlet property="passwordTextField" destination="Wh7-OF-Dbd" id="rhY-Fe-2MI"/>
                         <outlet property="phoneNumberLabel" destination="dz2-hY-QlV" id="cCZ-7q-N8l"/>
                         <outlet property="phoneNumberTextField" destination="DYz-vt-IKN" id="88C-p1-ZmW"/>
                         <outlet property="registerButton" destination="cBA-Q3-NI9" id="g07-hd-tgn"/>
+                        <outlet property="repeatPasswordContainer" destination="srb-mp-XRm" id="WmU-Zq-q6M"/>
                         <outlet property="repeatPasswordLabel" destination="NMC-bI-Ovm" id="olU-Nc-4l7"/>
                         <outlet property="repeatPasswordTextField" destination="fJ6-O9-NmC" id="XlB-vh-mln"/>
                         <outlet property="scrollView" destination="gHs-tC-8Sm" id="KEs-xb-m7F"/>

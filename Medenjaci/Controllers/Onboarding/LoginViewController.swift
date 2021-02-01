@@ -19,7 +19,7 @@ class LoginViewController: RegistrationFlowViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = Strings.Common.login
+        title = Strings.Title.login
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         setUpLabels()
         setUpPlaceholders()
@@ -38,7 +38,7 @@ class LoginViewController: RegistrationFlowViewController {
     }
     
     private func setUpButtons() {
-        loginButton.setTitle(Strings.Common.login.uppercased(), for: .normal)
+        loginButton.setTitle(Strings.Title.login.uppercased(), for: .normal)
         forgotPasswordButton.setTitle(Strings.Common.forgotPassword, for: .normal)
     }
     
@@ -50,6 +50,4 @@ class LoginViewController: RegistrationFlowViewController {
         window.rootViewController?.removeFromParent()
         window.rootViewController = viewController
     }
-    
-
 }

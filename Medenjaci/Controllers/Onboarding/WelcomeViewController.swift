@@ -38,8 +38,8 @@ class WelcomeViewController: UIViewController {
     }
     
     private func setUpButtons() {
-        registerButton.setTitle(Strings.Common.register.uppercased(), for: .normal)
-        loginButton.setTitle(Strings.Common.login.uppercased(), for: .normal)
+        registerButton.setTitle(Strings.Title.register.uppercased(), for: .normal)
+        loginButton.setTitle(Strings.Title.login.uppercased(), for: .normal)
     }
 }
 

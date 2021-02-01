@@ -16,7 +16,7 @@ class RegistrationFlowViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = Strings.Common.register
+        title = Strings.Title.register
         setUpScrollView()
         setUpGestureRecognizer()
         registerForNotifications()
