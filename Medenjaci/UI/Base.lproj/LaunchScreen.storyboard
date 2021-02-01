@@ -24,7 +24,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" name="backgroundColor"/>
+                        <color key="backgroundColor" name="loginBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ayq-hw-UhR" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="PaN-rp-vQQ"/>
                             <constraint firstItem="ayq-hw-UhR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Xut-EQ-Wsl"/>
@@ -37,7 +37,7 @@
         </scene>
     </scenes>
     <resources>
-        <namedColor name="backgroundColor">
+        <namedColor name="loginBackgroundColor">
             <color red="0.92156862745098034" green="0.68627450980392157" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="primaryTextColor">

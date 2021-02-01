@@ -33,20 +33,21 @@
         <scene sceneID="CzH-oz-lW2">
             <objects>
                 <tableViewController id="Gj8-ou-fOX" userLabel="Cart tab" customClass="CartTableViewController" customModule="Medenjaci" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="uYa-7C-BeZ">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="uYa-7C-BeZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="backgroundColor"/>
+                        <color key="separatorColor" name="backgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="noItemsCell" textLabel="9vY-Uo-J1G" style="IBUITableViewCellStyleDefault" id="vOF-XO-bEv">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vOF-XO-bEv" id="fNx-ac-Bk8">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="There are no items in the cart" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9vY-Uo-J1G">
-                                            <rect key="frame" x="20" y="0.0" width="374" height="44"/>
+                                            <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                             <color key="textColor" name="primaryTextColor"/>
@@ -57,7 +58,7 @@
                                 <color key="backgroundColor" name="backgroundColor"/>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="orderItemCell" rowHeight="80" id="9l1-Hj-FS8" userLabel="Order Item Cell" customClass="OrderItemTableViewCell" customModule="Medenjaci" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="72" width="414" height="80"/>
+                                <rect key="frame" x="0.0" y="71.5" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9l1-Hj-FS8" id="3tR-4R-Gwt">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
@@ -110,7 +111,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="orderAmountCell" textLabel="5NM-cH-nzC" rowHeight="37" style="IBUITableViewCellStyleDefault" id="nCJ-p7-4QO" userLabel="Order amount cell">
-                                <rect key="frame" x="0.0" y="152" width="414" height="37"/>
+                                <rect key="frame" x="0.0" y="151.5" width="414" height="37"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nCJ-p7-4QO" id="Zst-K6-Xh9">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="37"/>
@@ -128,14 +129,14 @@
                                 <color key="backgroundColor" name="backgroundColor"/>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="orderSummaryCell" id="gC5-5U-SFs" userLabel="Order Cell" customClass="TextViewAndButtonTableViewCell" customModule="Medenjaci" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="189" width="414" height="118"/>
+                                <rect key="frame" x="0.0" y="188.5" width="414" height="118.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gC5-5U-SFs" id="dry-oR-hFJ">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="118"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="118.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mWx-4B-ief">
-                                            <rect key="frame" x="20" y="10" width="374" height="98"/>
+                                            <rect key="frame" x="20" y="10" width="374" height="98.5"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your order notes" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xKh-z5-mq1">
                                                     <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
@@ -154,7 +155,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </textField>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2B-oi-SY0" userLabel="Order button">
-                                                    <rect key="frame" x="0.0" y="54" width="374" height="44"/>
+                                                    <rect key="frame" x="0.0" y="54.5" width="374" height="44"/>
                                                     <color key="backgroundColor" name="primaryButton"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="44" id="zQz-kB-Kc9"/>
@@ -767,6 +768,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="backgroundColor"/>
+                        <color key="separatorColor" name="backgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="spotlightCell" rowHeight="250" id="g2V-Ao-LDh" userLabel="Spotlight cell" customClass="TableSpotlightCell" customModule="Medenjaci" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="250"/>
@@ -790,39 +792,35 @@
                                     <outlet property="spotlightImage" destination="hwy-WY-1uP" id="AEs-Gj-oTt"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="productDetailsCell" id="Xqv-rK-Dkm" userLabel="Product details cell" customClass="TableTextViewCell" customModule="Medenjaci" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="278" width="414" height="239.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="productDetailsCell" id="Xqv-rK-Dkm" userLabel="Product details cell" customClass="BasicTableCell" customModule="Medenjaci" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="278" width="414" height="132"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xqv-rK-Dkm" id="Fpv-re-smx">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="239.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="132"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="kb2-2H-NbV">
-                                            <rect key="frame" x="10" y="0.0" width="394" height="239.5"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <accessibility key="accessibilityConfiguration">
-                                                <accessibilityTraits key="traits" link="YES"/>
-                                            </accessibility>
-                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                            <color key="textColor" name="primaryTextColor"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xr7-3J-5gZ" userLabel="Product details label">
+                                            <rect key="frame" x="10" y="5" width="394" height="122"/>
+                                            <string key="text">Linden honey is a tough honey to produce as the Linden trees are only in bloom 7-10 days. The honey has been described as having a very fresh aroma described as minty, menthol, camphor, balsamic, etc. Excellent honey for tea, desserts, muffins, hot cereal - you name it!</string>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                        </textView>
+                                            <color key="textColor" name="primaryTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="kb2-2H-NbV" secondAttribute="bottom" id="K1H-G0-G6e"/>
-                                        <constraint firstAttribute="trailing" secondItem="kb2-2H-NbV" secondAttribute="trailing" constant="10" id="KRV-Li-m96"/>
-                                        <constraint firstItem="kb2-2H-NbV" firstAttribute="leading" secondItem="Fpv-re-smx" secondAttribute="leading" constant="10" id="emi-c8-X8T"/>
-                                        <constraint firstItem="kb2-2H-NbV" firstAttribute="top" secondItem="Fpv-re-smx" secondAttribute="top" id="oXw-7I-UGM"/>
+                                        <constraint firstAttribute="trailing" secondItem="Xr7-3J-5gZ" secondAttribute="trailing" constant="10" id="15Q-7c-e6d"/>
+                                        <constraint firstAttribute="bottom" secondItem="Xr7-3J-5gZ" secondAttribute="bottom" constant="5" id="2AS-D2-G37"/>
+                                        <constraint firstItem="Xr7-3J-5gZ" firstAttribute="leading" secondItem="Fpv-re-smx" secondAttribute="leading" constant="10" id="Jct-AO-8DD"/>
+                                        <constraint firstItem="Xr7-3J-5gZ" firstAttribute="top" secondItem="Fpv-re-smx" secondAttribute="top" constant="5" id="bjA-P1-73m"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" name="backgroundColor"/>
                                 <connections>
-                                    <outlet property="textView" destination="kb2-2H-NbV" id="sMY-aK-Bej"/>
+                                    <outlet property="label" destination="Xr7-3J-5gZ" id="sn8-Rf-g1g"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="priceCell" textLabel="O6G-A0-DVW" rowHeight="37" style="IBUITableViewCellStyleDefault" id="8mV-sb-VU0" userLabel="Price cell" customClass="StyledTableViewCell" customModule="Medenjaci" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="517.5" width="414" height="37"/>
+                                <rect key="frame" x="0.0" y="410" width="414" height="37"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8mV-sb-VU0" id="MgE-qa-VCc">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="37"/>
@@ -840,7 +838,7 @@
                                 <color key="backgroundColor" name="backgroundColor"/>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="orderButtonCell" id="6eX-cx-Vbf" userLabel="Order button cell" customClass="SingleButtonCell" customModule="Medenjaci" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="554.5" width="414" height="54"/>
+                                <rect key="frame" x="0.0" y="447" width="414" height="54"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6eX-cx-Vbf" id="WxZ-Zv-GpP">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="54"/>

@@ -60,15 +60,14 @@ class ProductDetailsTableViewController: UITableViewController {
                     as? TableSpotlightCell else { break }
             cell.configure(with: product.imageName)
             return cell
-        case .description:
+        case .description, .usageDirection:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "productDetailsCell", for: indexPath)
-                    as? TableTextViewCell else { break }
-            cell.textContent = product.description
-            return cell
-        case .usageDirection:
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "productDetailsCell", for: indexPath)
-                    as? TableTextViewCell else { break }
-            cell.textContent = product.usageDirections
+                    as? BasicTableCell else { break }
+            if section == .description {
+                cell.textContent = product.description
+            } else {
+                cell.textContent = product.usageDirections
+            }
             return cell
         case .price:
             let cell = tableView.dequeueReusableCell(withIdentifier: "priceCell", for: indexPath)
@@ -98,9 +97,9 @@ class ProductDetailsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         if let headerView = view as? UITableViewHeaderFooterView {
-            headerView.contentView.backgroundColor = Assets.Colors.sectionHeaderBackgroundColor.color
-            headerView.layer.cornerRadius = headerView.frame.height / 2
-            headerView.layer.masksToBounds = true
+            headerView.contentView.backgroundColor = Assets.Colors.backgroundColor.color
+//            headerView.layer.cornerRadius = headerView.frame.height / 2
+//            headerView.layer.masksToBounds = true
             headerView.textLabel?.textColor = Assets.Colors.primaryTextColor.color
             headerView.textLabel?.font = UIFont.systemFont(ofSize: 20, weight: .bold)
         }

@@ -34,13 +34,13 @@
 		AD947C7E25C7731F00FFFB1D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD947C7D25C7731F00FFFB1D /* User.swift */; };
 		AD947C8625C7817100FFFB1D /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD947C8525C7817100FFFB1D /* ChangePasswordViewController.swift */; };
 		AD947C8E25C7860100FFFB1D /* ProductDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD947C8D25C7860100FFFB1D /* ProductDetailsTableViewController.swift */; };
-		AD947C9325C7871700FFFB1D /* TableTextViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD947C9225C7871700FFFB1D /* TableTextViewCell.swift */; };
 		AD947C9825C7884000FFFB1D /* TableSpotlightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD947C9725C7884000FFFB1D /* TableSpotlightCell.swift */; };
 		AD947C9D25C78AC700FFFB1D /* SingleButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD947C9C25C78AC700FFFB1D /* SingleButtonCell.swift */; };
 		AD947CA825C78BD000FFFB1D /* Product-1.json in Resources */ = {isa = PBXBuildFile; fileRef = AD947CA425C78BCF00FFFB1D /* Product-1.json */; };
 		AD947CA925C78BD000FFFB1D /* Product-2.json in Resources */ = {isa = PBXBuildFile; fileRef = AD947CA525C78BCF00FFFB1D /* Product-2.json */; };
 		AD947CAA25C78BD000FFFB1D /* Product-4.json in Resources */ = {isa = PBXBuildFile; fileRef = AD947CA625C78BD000FFFB1D /* Product-4.json */; };
 		AD947CAB25C78BD000FFFB1D /* Product-3.json in Resources */ = {isa = PBXBuildFile; fileRef = AD947CA725C78BD000FFFB1D /* Product-3.json */; };
+		AD947E1D25C8B63300FFFB1D /* BasicTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD947E1C25C8B63300FFFB1D /* BasicTableCell.swift */; };
 		ADBB6E2A25BA47250000D5DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBB6E2925BA47250000D5DA /* AppDelegate.swift */; };
 		ADBB6E2C25BA47250000D5DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBB6E2B25BA47250000D5DA /* SceneDelegate.swift */; };
 		ADBB6E2E25BA47250000D5DA /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBB6E2D25BA47250000D5DA /* WelcomeViewController.swift */; };
@@ -109,13 +109,13 @@
 		AD947C7D25C7731F00FFFB1D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		AD947C8525C7817100FFFB1D /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
 		AD947C8D25C7860100FFFB1D /* ProductDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsTableViewController.swift; sourceTree = "<group>"; };
-		AD947C9225C7871700FFFB1D /* TableTextViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableTextViewCell.swift; sourceTree = "<group>"; };
 		AD947C9725C7884000FFFB1D /* TableSpotlightCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSpotlightCell.swift; sourceTree = "<group>"; };
 		AD947C9C25C78AC700FFFB1D /* SingleButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleButtonCell.swift; sourceTree = "<group>"; };
 		AD947CA425C78BCF00FFFB1D /* Product-1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Product-1.json"; sourceTree = "<group>"; };
 		AD947CA525C78BCF00FFFB1D /* Product-2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Product-2.json"; sourceTree = "<group>"; };
 		AD947CA625C78BD000FFFB1D /* Product-4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Product-4.json"; sourceTree = "<group>"; };
 		AD947CA725C78BD000FFFB1D /* Product-3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Product-3.json"; sourceTree = "<group>"; };
+		AD947E1C25C8B63300FFFB1D /* BasicTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTableCell.swift; sourceTree = "<group>"; };
 		ADBB6E2625BA47250000D5DA /* Medenjaci.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Medenjaci.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADBB6E2925BA47250000D5DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADBB6E2B25BA47250000D5DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -215,9 +215,9 @@
 				AD16D16725C629F200CA9C57 /* TextViewAndButtonTableViewCell.swift */,
 				AD16D17725C767CE00CA9C57 /* DoubleButtonCell.swift */,
 				AD16D18525C76C5000CA9C57 /* StyledTableViewCell.swift */,
-				AD947C9225C7871700FFFB1D /* TableTextViewCell.swift */,
 				AD947C9725C7884000FFFB1D /* TableSpotlightCell.swift */,
 				AD947C9C25C78AC700FFFB1D /* SingleButtonCell.swift */,
+				AD947E1C25C8B63300FFFB1D /* BasicTableCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -591,8 +591,8 @@
 				AD16D18625C76C5000CA9C57 /* StyledTableViewCell.swift in Sources */,
 				AD16D15425C61C0400CA9C57 /* CartTableViewController.swift in Sources */,
 				AD16D10D25C5BF8400CA9C57 /* CollectionContainerTableViewCell.swift in Sources */,
-				AD947C9325C7871700FFFB1D /* TableTextViewCell.swift in Sources */,
 				ADBB6EF225BA55AC0000D5DA /* Localization.swift in Sources */,
+				AD947E1D25C8B63300FFFB1D /* BasicTableCell.swift in Sources */,
 				AD947C8E25C7860100FFFB1D /* ProductDetailsTableViewController.swift in Sources */,
 				AD16D0D225C4F5D700CA9C57 /* ResetPasswordViewController.swift in Sources */,
 				ADBB6EF325BA55AC0000D5DA /* Assets.swift in Sources */,
