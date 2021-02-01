@@ -42,6 +42,8 @@ internal enum Strings {
     internal static let pending = Strings.tr("Localizable", "Common.Pending")
     /// Phone number
     internal static let phoneNumber = Strings.tr("Localizable", "Common.PhoneNumber")
+    /// Price
+    internal static let price = Strings.tr("Localizable", "Common.Price")
     /// Quantity: %d
     internal static func quantity(_ p1: Int) -> String {
       return Strings.tr("Localizable", "Common.Quantity", p1)
@@ -101,12 +103,16 @@ internal enum Strings {
     internal static let currentOrder = Strings.tr("Localizable", "Section.CurrentOrder")
     /// Customer support
     internal static let customerSupport = Strings.tr("Localizable", "Section.CustomerSupport")
+    /// Description
+    internal static let description = Strings.tr("Localizable", "Section.Description")
     /// Order notes:
     internal static let orderNotes = Strings.tr("Localizable", "Section.OrderNotes")
     /// Personal info
     internal static let personalInfo = Strings.tr("Localizable", "Section.PersonalInfo")
     /// Previous orders
     internal static let previousOrders = Strings.tr("Localizable", "Section.PreviousOrders")
+    /// Usage directions
+    internal static let usageDirections = Strings.tr("Localizable", "Section.UsageDirections")
   }
 
   internal enum Title {

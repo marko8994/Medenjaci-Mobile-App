@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct Category: Codable {
+public struct Category: Decodable {
     let name: String
     let products: [LightProduct]
 }

@@ -9,12 +9,22 @@ import UIKit
 
 class HomeTableViewController: UITableViewController {
     
+    typealias Segues = StoryboardSegue.Main
+    
     var model: HomeModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Medenjaci"
         model = MockData.shared.loadData("Home")
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if Segues(segue) == Segues.productDetails, let productUid = sender as? String,
+           let productDetailsVC = segue.destination as? ProductDetailsTableViewController {
+            productDetailsVC.productUid = productUid
+        }
     }
 
     // MARK: - Table view data source
@@ -32,7 +42,7 @@ class HomeTableViewController: UITableViewController {
             fatalError("Couldn't not dequeue cell for \(indexPath)")
         }
         let products = model.categories[indexPath.section].products
-        cell.configure(items: products)
+        cell.configure(items: products, actionDelegate: self)
         return cell
     }
     
@@ -54,4 +64,14 @@ class HomeTableViewController: UITableViewController {
         }
     }
 
+}
+
+extension HomeTableViewController: CollectionContainerActionDelegate {
+    
+    public func cell(_ cell: CollectionContainerTableViewCell,
+                     collectionItemSelectedWithUserData userData: Any?) {
+        if let productUid = userData as? String {
+            perform(segue: Segues.productDetails, sender: productUid)
+        }
+    }
 }

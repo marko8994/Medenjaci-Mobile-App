@@ -36,6 +36,7 @@
 "Common.Delivered" = "Delivered";
 "Common.Pending" = "Pending";
 "Common.Rejected" = "Rejected";
+"Common.Price" = "Price";
 "Placeholder.Name" = "Enter your name";
 "Placeholder.Email" = "Enter your email";
 "Placeholder.Address" = "Enter your address";
@@ -50,6 +51,8 @@
 "Section.OrderNotes" = "Order notes:";
 "Section.PreviousOrders" = "Previous orders";
 "Section.PersonalInfo" = "Personal info";
+"Section.Description" = "Description";
+"Section.UsageDirections" = "Usage directions";
 "Section.CustomerSupport" = "Customer support";
 "EmptySection.EmptyCurrentOrder" = "Cart is empty. Go to home page and add products.";
 "EmptySection.NoOlderOrders" = "You don't have old orders.";

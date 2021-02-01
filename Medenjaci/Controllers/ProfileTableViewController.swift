@@ -22,6 +22,8 @@ enum PersonalInfoRow: Int {
 
 class ProfileTableViewController: UITableViewController {
     
+    typealias Segues = StoryboardSegue.Main
+    
     var sections: [ProfileSection] = [.personalInfo, .updatePersonalInfo, .customerSupport]
     
     var currentUser = MockData.shared.currentUser
@@ -34,7 +36,7 @@ class ProfileTableViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if StoryboardSegue.Main(segue) == StoryboardSegue.Main.changePersonalInfo,
+        if Segues(segue) == Segues.changePersonalInfo,
            let changePersonalInfoVC = segue.destination as? SetUpUserInfoViewController {
             changePersonalInfoVC.isRegisterScreen = false
         }
