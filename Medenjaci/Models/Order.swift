@@ -9,15 +9,15 @@ import Foundation
 
 enum OrderStatus: String, Decodable {
     case pending
-    case delivered
+    case approved
     case rejected
     
     var name: String {
         switch self {
         case .pending:
             return Strings.Common.pending
-        case .delivered:
-            return Strings.Common.delivered
+        case .approved:
+            return Strings.Common.approved
         case .rejected:
             return Strings.Common.rejected
         }
@@ -25,16 +25,19 @@ enum OrderStatus: String, Decodable {
 }
 
 public struct Order: Decodable {
-    let orderItems: [OrderItem]?
-    let totalAmount: String
+    let uid: String
+    let orderItems: [OrderItem]
+    let totalAmount: Int
     let date: Date?
     let status: OrderStatus?
     let orderNotes: String?
+    let rejectionReason: String?
+    let arrivalEstimate: Int?
 }
 
 public struct OrderItem: Decodable {
     let productName: String
     let quantity: Int
-    let price: String
-    let unitPrice: String
+    let price: Int
+    let unitPrice: Int
 }

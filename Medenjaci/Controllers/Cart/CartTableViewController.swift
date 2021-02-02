@@ -10,7 +10,7 @@ import UIKit
 enum CartSection: Int {
     case orderItems = 0
     case orderSummary
-    case oldOrders
+    case previousOrders
 }
 
 enum OrderSummaryRow: Int {
@@ -21,6 +21,8 @@ enum OrderSummaryRow: Int {
 
 class CartTableViewController: UITableViewController {
     
+    typealias Segues = StoryboardSegue.Main
+    
     var sections: [CartSection] {
         var sections = [CartSection]()
         if currentOrder != nil {
@@ -28,17 +30,12 @@ class CartTableViewController: UITableViewController {
         } else {
             sections.append(.orderItems)
         }
-        sections.append(.oldOrders)
+        sections.append(.previousOrders)
         return sections
     }
     
-    var oldOrders: [Order]? {
-        let orders: [Order]? = MockData.shared.loadArrayData("Cart")
-        if let previousOrders = orders {
-            return previousOrders
-        } else {
-            return nil
-        }
+    var previousOrders: [Order]? {
+        return MockData.shared.previousOrders
     }
     
     var currentOrder = MockData.shared.currentOrder
@@ -47,6 +44,15 @@ class CartTableViewController: UITableViewController {
         super.viewDidLoad()
         title = Strings.Common.cart
         tableView.keyboardDismissMode = .interactive
+        tableView.contentInset.bottom = 50
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if Segues(segue) == Segues.orderDetails, let orderUid = sender as? String,
+           let orderDetailsVC = segue.destination as? OrderDetailsViewController {
+            orderDetailsVC.orderUid = orderUid
+        }
     }
 
     // MARK: - Table view data source
@@ -58,34 +64,30 @@ class CartTableViewController: UITableViewController {
         let section = sections[section]
         switch section {
         case .orderItems:
-            if let currentOrder = currentOrder, let orderItems = currentOrder.orderItems {
-                return orderItems.count
+            if let currentOrder = currentOrder {
+                return currentOrder.orderItems.count
             } else {
                 return 1
             }
         case .orderSummary:
             return 3
-        case .oldOrders:
-            if let oldOrders = oldOrders {
-                return oldOrders.count
+        case .previousOrders:
+            if let previousOrders = previousOrders {
+                return previousOrders.count
             } else {
                 return 1
             }
         }
     }
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
-    }
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let section = sections[indexPath.section]
         switch section {
         case .orderItems:
-            if let currentOrder = currentOrder, let orderItems = currentOrder.orderItems, orderItems.count > 0 {
+            if let currentOrder = currentOrder, currentOrder.orderItems.count > 0 {
                 guard let cell = tableView.dequeueReusableCell(withIdentifier: "orderItemCell", for: indexPath)
                         as? QuaternaryTableCell else { break }
-                cell.configure(with: orderItems[indexPath.row])
+                cell.configure(with: currentOrder.orderItems[indexPath.row])
                 return cell
             } else {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "noItemsCell", for: indexPath)
@@ -95,11 +97,11 @@ class CartTableViewController: UITableViewController {
         case .orderSummary:
             guard let cell = orderSummaryCell(for: indexPath) else { break }
             return cell
-        case .oldOrders:
-            if let oldOrders = oldOrders {
+        case .previousOrders:
+            if let previousOrders = previousOrders {
                 guard let cell = tableView.dequeueReusableCell(withIdentifier: "oldOrderCell", for: indexPath)
                         as? QuaternaryTableCell else { break }
-                cell.configure(with: oldOrders[indexPath.row])
+                cell.configure(with: previousOrders[indexPath.row])
                 return cell
             } else {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "noItemsCell", for: indexPath)
@@ -110,13 +112,35 @@ class CartTableViewController: UITableViewController {
         fatalError("Couldn't find cell for index path: \(String(describing: indexPath))")
     }
     
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        let section = sections[indexPath.section]
+        switch section {
+        case .orderItems, .previousOrders:
+            return UITableView.automaticDimension
+        case .orderSummary:
+            if OrderSummaryRow(rawValue: indexPath.row) == .orderButton {
+                return 54
+            } else {
+                return UITableView.automaticDimension
+            }
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if sections[indexPath.section] == .previousOrders, let previousOrders = previousOrders {
+            perform(segue: Segues.orderDetails, sender: previousOrders[indexPath.row].uid)
+        } else {
+            return
+        }
+    }
+
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch sections[section] {
         case .orderItems:
             return Strings.Section.currentOrder
         case .orderSummary:
             return nil
-        case .oldOrders:
+        case .previousOrders:
             return Strings.Section.previousOrders
         }
     }
@@ -134,7 +158,8 @@ class CartTableViewController: UITableViewController {
         switch sectionRow {
         case .orderAmount:
             let cell = tableView.dequeueReusableCell(withIdentifier: "orderAmountCell", for: indexPath)
-            cell.textLabel?.text = Strings.Common.totalAmount(currentOrder?.totalAmount ?? "")
+            guard let totalAmount = currentOrder?.totalAmount else { return nil }
+            cell.textLabel?.text = Strings.Common.totalAmount(totalAmount)
             return cell
         case .orderNotes:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "orderNotesCell", for: indexPath)
@@ -146,6 +171,9 @@ class CartTableViewController: UITableViewController {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "orderButtonCell", for: indexPath)
                 as? SingleButtonCell else { return nil }
             cell.buttonTitle = Strings.Title.order
+            cell.buttonAction = {
+                return
+            }
             return cell
         case .none:
             return nil

@@ -17,6 +17,7 @@ class HomeTableViewController: UITableViewController {
         super.viewDidLoad()
         title = "Medenjaci"
         model = MockData.shared.loadData("Home")
+        tableView.contentInset.bottom = 50
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     

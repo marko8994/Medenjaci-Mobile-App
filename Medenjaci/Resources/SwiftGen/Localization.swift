@@ -14,28 +14,44 @@ internal enum Strings {
   internal enum Common {
     /// Address
     internal static let address = Strings.tr("Localizable", "Common.Address")
-    /// Amount: %@
-    internal static func amount(_ p1: Any) -> String {
-      return Strings.tr("Localizable", "Common.Amount", String(describing: p1))
-    }
+    /// Approved
+    internal static let approved = Strings.tr("Localizable", "Common.Approved")
+    /// Arrival estimate
+    internal static let arrivalEstimate = Strings.tr("Localizable", "Common.ArrivalEstimate")
     /// Cart
     internal static let cart = Strings.tr("Localizable", "Common.Cart")
-    /// Date: %@
-    internal static func date(_ p1: Any) -> String {
-      return Strings.tr("Localizable", "Common.Date", String(describing: p1))
+    /// %d$
+    internal static func dolarPrice(_ p1: Int) -> String {
+      return Strings.tr("Localizable", "Common.DolarPrice", p1)
     }
-    /// Delivered
-    internal static let delivered = Strings.tr("Localizable", "Common.Delivered")
     /// Email
     internal static let email = Strings.tr("Localizable", "Common.Email")
     /// Forgot password?
     internal static let forgotPassword = Strings.tr("Localizable", "Common.ForgotPassword")
-    /// Item amount
+    /// In %d day
+    internal static func inDay(_ p1: Int) -> String {
+      return Strings.tr("Localizable", "Common.InDay", p1)
+    }
+    /// In %d days
+    internal static func inDays(_ p1: Int) -> String {
+      return Strings.tr("Localizable", "Common.InDays", p1)
+    }
+    /// Order date: %@
+    internal static func inlineOrderDate(_ p1: Any) -> String {
+      return Strings.tr("Localizable", "Common.InlineOrderDate", String(describing: p1))
+    }
+    /// Status: %@
+    internal static func inlineStatus(_ p1: Any) -> String {
+      return Strings.tr("Localizable", "Common.InlineStatus", String(describing: p1))
+    }
+    /// Item amount:
     internal static let itemAmount = Strings.tr("Localizable", "Common.ItemAmount")
     /// Name
     internal static let name = Strings.tr("Localizable", "Common.Name")
     /// New password
     internal static let newPassword = Strings.tr("Localizable", "Common.NewPassword")
+    /// Order date
+    internal static let orderDate = Strings.tr("Localizable", "Common.OrderDate")
     /// Order notes:
     internal static let orderNotes = Strings.tr("Localizable", "Common.OrderNotes")
     /// Password
@@ -52,19 +68,19 @@ internal enum Strings {
     }
     /// Rejected
     internal static let rejected = Strings.tr("Localizable", "Common.Rejected")
+    /// Rejection reason
+    internal static let rejectionReason = Strings.tr("Localizable", "Common.RejectionReason")
     /// Repeat new password
     internal static let repeatNewPassword = Strings.tr("Localizable", "Common.RepeatNewPassword")
     /// Repeat password
     internal static let repeatPassword = Strings.tr("Localizable", "Common.RepeatPassword")
-    /// Status: %@
-    internal static func status(_ p1: Any) -> String {
-      return Strings.tr("Localizable", "Common.Status", String(describing: p1))
+    /// Status
+    internal static let status = Strings.tr("Localizable", "Common.Status")
+    /// Total amount: %d$
+    internal static func totalAmount(_ p1: Int) -> String {
+      return Strings.tr("Localizable", "Common.TotalAmount", p1)
     }
-    /// Total amount: %@
-    internal static func totalAmount(_ p1: Any) -> String {
-      return Strings.tr("Localizable", "Common.TotalAmount", String(describing: p1))
-    }
-    /// Unit price: %@
+    /// Unit price: %@$
     internal static func unitPrice(_ p1: Any) -> String {
       return Strings.tr("Localizable", "Common.UnitPrice", String(describing: p1))
     }
@@ -103,12 +119,16 @@ internal enum Strings {
   }
 
   internal enum Section {
+    /// Additional info
+    internal static let additionalOrderInfo = Strings.tr("Localizable", "Section.AdditionalOrderInfo")
     /// Current order summary
     internal static let currentOrder = Strings.tr("Localizable", "Section.CurrentOrder")
     /// Customer support
     internal static let customerSupport = Strings.tr("Localizable", "Section.CustomerSupport")
     /// Description
     internal static let description = Strings.tr("Localizable", "Section.Description")
+    /// Order summary
+    internal static let orderSummary = Strings.tr("Localizable", "Section.OrderSummary")
     /// Personal info
     internal static let personalInfo = Strings.tr("Localizable", "Section.PersonalInfo")
     /// Previous orders
@@ -128,6 +148,8 @@ internal enum Strings {
     internal static let login = Strings.tr("Localizable", "Title.Login")
     /// Order
     internal static let order = Strings.tr("Localizable", "Title.Order")
+    /// Order details
+    internal static let orderDetails = Strings.tr("Localizable", "Title.OrderDetails")
     /// Profile
     internal static let profile = Strings.tr("Localizable", "Title.Profile")
     /// Register

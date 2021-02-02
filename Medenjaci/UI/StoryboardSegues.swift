@@ -15,6 +15,7 @@ internal enum StoryboardSegue {
   internal enum Main: String, SegueType {
     case changePassword
     case changePersonalInfo
+    case orderDetails
     case productDetails
   }
 }
