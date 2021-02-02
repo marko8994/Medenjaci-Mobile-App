@@ -22,6 +22,8 @@ enum PersonalInfoRow: Int {
 
 class ProfileTableViewController: UITableViewController {
     
+    typealias Segues = StoryboardSegue.Main
+    
     var sections: [ProfileSection] = [.personalInfo, .updatePersonalInfo, .customerSupport]
     
     var currentUser = MockData.shared.currentUser
@@ -34,7 +36,7 @@ class ProfileTableViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if StoryboardSegue.Main(segue) == StoryboardSegue.Main.changePersonalInfo,
+        if Segues(segue) == Segues.changePersonalInfo,
            let changePersonalInfoVC = segue.destination as? SetUpUserInfoViewController {
             changePersonalInfoVC.isRegisterScreen = false
         }
@@ -50,13 +52,21 @@ class ProfileTableViewController: UITableViewController {
         switch section {
         case .personalInfo:
             return 4
-        case .updatePersonalInfo, .customerSupport:
-            return 1
+        case .updatePersonalInfo:
+            return 2
+        case .customerSupport:
+            return 2
         }
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
+        let section = sections[indexPath.section]
+        switch section {
+        case .personalInfo:
+            return UITableView.automaticDimension
+        case .updatePersonalInfo, .customerSupport:
+            return 54
+        }
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -66,15 +76,32 @@ class ProfileTableViewController: UITableViewController {
             guard let cell = personalInfoCell(for: indexPath) else { break }
             return cell
         case .updatePersonalInfo:
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "personalInfoButtonsCell", for: indexPath)
-                as? DoubleButtonCell else { break }
-            cell.configureForPersonalInfo()
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "buttonCell", for: indexPath)
+                as? SingleButtonCell else { break }
+            if indexPath.row == 0 {
+                cell.buttonTitle = Strings.Title.changePersonalInfo
+                cell.buttonAction = {
+                    self.perform(segue: Segues.changePersonalInfo)
+                }
+            } else {
+                cell.buttonTitle = Strings.Title.changePassword
+                cell.buttonAction = {
+                    self.perform(segue: Segues.changePassword)
+                }
+            }
             return cell
         case .customerSupport:
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "customerSupportCell", for: indexPath)
-                as? TextViewAndButtonTableViewCell else { break }
-            cell.configureForPersonalInfo()
-            return cell
+            if indexPath.row == 0 {
+                guard let cell = tableView.dequeueReusableCell(withIdentifier: "supportTextFieldCell", for: indexPath)
+                    as? TextFieldTableCell else { break }
+                cell.placeholder = Strings.Placeholder.customerRequest
+                return cell
+            } else {
+                guard let cell = tableView.dequeueReusableCell(withIdentifier: "buttonCell", for: indexPath)
+                    as? SingleButtonCell else { break }
+                cell.buttonTitle = Strings.Title.sendRequest
+                return cell
+            }
         }
         fatalError("Couldn't find cell for index path: \(String(describing: indexPath))")
     }
@@ -92,9 +119,7 @@ class ProfileTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         if let headerView = view as? UITableViewHeaderFooterView {
-            headerView.contentView.backgroundColor = Assets.Colors.sectionHeaderBackgroundColor.color
-            headerView.layer.cornerRadius = headerView.frame.height / 2
-            headerView.layer.masksToBounds = true
+            headerView.contentView.backgroundColor = Assets.Colors.backgroundColor.color
             headerView.textLabel?.textColor = Assets.Colors.primaryTextColor.color
             headerView.textLabel?.font = UIFont.systemFont(ofSize: 20, weight: .bold)
         }

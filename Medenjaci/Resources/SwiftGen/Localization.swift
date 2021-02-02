@@ -30,18 +30,22 @@ internal enum Strings {
     internal static let email = Strings.tr("Localizable", "Common.Email")
     /// Forgot password?
     internal static let forgotPassword = Strings.tr("Localizable", "Common.ForgotPassword")
+    /// Item amount
+    internal static let itemAmount = Strings.tr("Localizable", "Common.ItemAmount")
     /// Name
     internal static let name = Strings.tr("Localizable", "Common.Name")
     /// New password
     internal static let newPassword = Strings.tr("Localizable", "Common.NewPassword")
-    /// Order
-    internal static let order = Strings.tr("Localizable", "Common.Order")
+    /// Order notes:
+    internal static let orderNotes = Strings.tr("Localizable", "Common.OrderNotes")
     /// Password
     internal static let password = Strings.tr("Localizable", "Common.Password")
     /// Pending
     internal static let pending = Strings.tr("Localizable", "Common.Pending")
     /// Phone number
     internal static let phoneNumber = Strings.tr("Localizable", "Common.PhoneNumber")
+    /// Price
+    internal static let price = Strings.tr("Localizable", "Common.Price")
     /// Quantity: %d
     internal static func quantity(_ p1: Int) -> String {
       return Strings.tr("Localizable", "Common.Quantity", p1)
@@ -80,6 +84,8 @@ internal enum Strings {
     internal static let customerRequest = Strings.tr("Localizable", "Placeholder.CustomerRequest")
     /// Enter your email
     internal static let email = Strings.tr("Localizable", "Placeholder.Email")
+    /// Enter amount your want to order
+    internal static let itemAmount = Strings.tr("Localizable", "Placeholder.ItemAmount")
     /// Enter your name
     internal static let name = Strings.tr("Localizable", "Placeholder.Name")
     /// Enter your new password
@@ -101,21 +107,27 @@ internal enum Strings {
     internal static let currentOrder = Strings.tr("Localizable", "Section.CurrentOrder")
     /// Customer support
     internal static let customerSupport = Strings.tr("Localizable", "Section.CustomerSupport")
-    /// Order notes:
-    internal static let orderNotes = Strings.tr("Localizable", "Section.OrderNotes")
+    /// Description
+    internal static let description = Strings.tr("Localizable", "Section.Description")
     /// Personal info
     internal static let personalInfo = Strings.tr("Localizable", "Section.PersonalInfo")
     /// Previous orders
     internal static let previousOrders = Strings.tr("Localizable", "Section.PreviousOrders")
+    /// Usage directions
+    internal static let usageDirections = Strings.tr("Localizable", "Section.UsageDirections")
   }
 
   internal enum Title {
+    /// Add to cart
+    internal static let addToCart = Strings.tr("Localizable", "Title.AddToCart")
     /// Change password
     internal static let changePassword = Strings.tr("Localizable", "Title.ChangePassword")
     /// Change personal info
     internal static let changePersonalInfo = Strings.tr("Localizable", "Title.ChangePersonalInfo")
     /// Login
     internal static let login = Strings.tr("Localizable", "Title.Login")
+    /// Order
+    internal static let order = Strings.tr("Localizable", "Title.Order")
     /// Profile
     internal static let profile = Strings.tr("Localizable", "Title.Profile")
     /// Register

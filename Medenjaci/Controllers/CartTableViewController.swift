@@ -9,9 +9,14 @@ import UIKit
 
 enum CartSection: Int {
     case orderItems = 0
-    case orderAmount
     case orderSummary
     case oldOrders
+}
+
+enum OrderSummaryRow: Int {
+    case orderAmount
+    case orderNotes
+    case orderButton
 }
 
 class CartTableViewController: UITableViewController {
@@ -19,7 +24,7 @@ class CartTableViewController: UITableViewController {
     var sections: [CartSection] {
         var sections = [CartSection]()
         if currentOrder != nil {
-            sections.append(contentsOf: [.orderItems, .orderAmount, .orderSummary])
+            sections.append(contentsOf: [.orderItems, .orderSummary])
         } else {
             sections.append(.orderItems)
         }
@@ -58,8 +63,8 @@ class CartTableViewController: UITableViewController {
             } else {
                 return 1
             }
-        case .orderAmount, .orderSummary:
-            return 1
+        case .orderSummary:
+            return 3
         case .oldOrders:
             if let oldOrders = oldOrders {
                 return oldOrders.count
@@ -79,7 +84,7 @@ class CartTableViewController: UITableViewController {
         case .orderItems:
             if let currentOrder = currentOrder, let orderItems = currentOrder.orderItems, orderItems.count > 0 {
                 guard let cell = tableView.dequeueReusableCell(withIdentifier: "orderItemCell", for: indexPath)
-                        as? OrderItemTableViewCell else { break }
+                        as? QuaternaryTableCell else { break }
                 cell.configure(with: orderItems[indexPath.row])
                 return cell
             } else {
@@ -87,19 +92,13 @@ class CartTableViewController: UITableViewController {
                 cell.textLabel?.text = Strings.EmptySection.emptyCurrentOrder
                 return cell
             }
-        case .orderAmount:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "orderAmountCell", for: indexPath)
-            cell.textLabel?.text = Strings.Common.totalAmount(currentOrder?.totalAmount ?? "")
-            return cell
         case .orderSummary:
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "orderSummaryCell", for: indexPath)
-                as? TextViewAndButtonTableViewCell else { break }
-            cell.configureForOrderSummary()
+            guard let cell = orderSummaryCell(for: indexPath) else { break }
             return cell
         case .oldOrders:
             if let oldOrders = oldOrders {
                 guard let cell = tableView.dequeueReusableCell(withIdentifier: "oldOrderCell", for: indexPath)
-                        as? OrderItemTableViewCell else { break }
+                        as? QuaternaryTableCell else { break }
                 cell.configure(with: oldOrders[indexPath.row])
                 return cell
             } else {
@@ -115,10 +114,8 @@ class CartTableViewController: UITableViewController {
         switch sections[section] {
         case .orderItems:
             return Strings.Section.currentOrder
-        case .orderAmount:
-            return nil
         case .orderSummary:
-            return Strings.Section.orderNotes
+            return nil
         case .oldOrders:
             return Strings.Section.previousOrders
         }
@@ -126,11 +123,32 @@ class CartTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         if let headerView = view as? UITableViewHeaderFooterView {
-            headerView.contentView.backgroundColor = Assets.Colors.sectionHeaderBackgroundColor.color
-            headerView.layer.cornerRadius = headerView.frame.height / 2
-            headerView.layer.masksToBounds = true
+            headerView.contentView.backgroundColor = Assets.Colors.backgroundColor.color
             headerView.textLabel?.textColor = Assets.Colors.primaryTextColor.color
             headerView.textLabel?.font = UIFont.systemFont(ofSize: 20, weight: .bold)
+        }
+    }
+    
+    private func orderSummaryCell(for indexPath: IndexPath) -> UITableViewCell? {
+        let sectionRow = OrderSummaryRow(rawValue: indexPath.row)
+        switch sectionRow {
+        case .orderAmount:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "orderAmountCell", for: indexPath)
+            cell.textLabel?.text = Strings.Common.totalAmount(currentOrder?.totalAmount ?? "")
+            return cell
+        case .orderNotes:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "orderNotesCell", for: indexPath)
+                as? TextFieldTableCell else { return nil }
+            cell.infoText = Strings.Common.orderNotes
+            cell.placeholder = Strings.Placeholder.orderNotes
+            return cell
+        case .orderButton:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "orderButtonCell", for: indexPath)
+                as? SingleButtonCell else { return nil }
+            cell.buttonTitle = Strings.Title.order
+            return cell
+        case .none:
+            return nil
         }
     }
 

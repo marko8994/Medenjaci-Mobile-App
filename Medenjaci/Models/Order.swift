@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum OrderStatus: String, Codable {
+enum OrderStatus: String, Decodable {
     case pending
     case delivered
     case rejected

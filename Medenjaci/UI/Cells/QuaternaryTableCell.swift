@@ -7,7 +7,7 @@
 
 import UIKit
 
-class OrderItemTableViewCell: StyledTableViewCell {
+class QuaternaryTableCell: StyledTableViewCell {
 
     @IBOutlet weak var primaryLabel: UILabel!
     @IBOutlet weak var secondaryLabel: UILabel!
@@ -34,7 +34,7 @@ private extension Date {
     func shortDate() -> String {
         let formater = DateFormatter()
         formater.dateStyle = .medium
-        formater.dateFormat = "d MMM y"
+        formater.dateFormat = "d MM y"
         return formater.string(from: self)
     }
     

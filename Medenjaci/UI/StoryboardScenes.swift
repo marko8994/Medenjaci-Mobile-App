@@ -22,6 +22,8 @@ internal enum StoryboardScene {
 
     internal static let initialScene = InitialSceneType<UIKit.UITabBarController>(storyboard: Main.self)
 
+    internal static let authorDetailsViewController = SceneType<ProductDetailsTableViewController>(storyboard: Main.self, identifier: "AuthorDetailsViewController")
+
     internal static let homeTabBarVC = SceneType<UIKit.UITabBarController>(storyboard: Main.self, identifier: "HomeTabBarVC")
   }
   internal enum Registration: StoryboardType {

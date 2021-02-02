@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct HomeModel: Codable {
+public struct HomeModel: Decodable {
     let highlightedProductsImageNames: [String]?
     let categories: [Category]
 }
