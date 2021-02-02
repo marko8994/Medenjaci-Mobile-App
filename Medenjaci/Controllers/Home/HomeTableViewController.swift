@@ -39,7 +39,7 @@ class HomeTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "collectionContainerCell", for: indexPath)
-                as? CollectionContainerTableViewCell else {
+                as? CollectionContainerTableCell else {
             fatalError("Couldn't not dequeue cell for \(indexPath)")
         }
         let products = model.categories[indexPath.section].products
@@ -67,7 +67,7 @@ class HomeTableViewController: UITableViewController {
 
 extension HomeTableViewController: CollectionContainerActionDelegate {
     
-    public func cell(_ cell: CollectionContainerTableViewCell,
+    public func cell(_ cell: CollectionContainerTableCell,
                      collectionItemSelectedWithUserData userData: Any?) {
         if let productUid = userData as? String {
             perform(segue: Segues.productDetails, sender: productUid)

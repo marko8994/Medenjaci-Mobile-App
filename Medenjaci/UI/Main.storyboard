@@ -289,7 +289,7 @@
                         <color key="backgroundColor" name="backgroundColor"/>
                         <color key="separatorColor" name="backgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="personalInfoCell" textLabel="os6-uZ-X4o" detailTextLabel="5Yw-nf-qBc" style="IBUITableViewCellStyleSubtitle" id="KVk-Ic-xxz" userLabel="Personal info cell" customClass="StyledTableViewCell" customModule="Medenjaci" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="personalInfoCell" textLabel="os6-uZ-X4o" detailTextLabel="5Yw-nf-qBc" style="IBUITableViewCellStyleSubtitle" id="KVk-Ic-xxz" userLabel="Personal info cell" customClass="StyledTableCell" customModule="Medenjaci" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="60.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KVk-Ic-xxz" id="C2c-hf-wYj">
@@ -422,7 +422,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="backgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="collectionContainerCell" rowHeight="200" id="9pb-U1-NVK" userLabel="collectionContainerCell" customClass="CollectionContainerTableViewCell" customModule="Medenjaci" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="collectionContainerCell" rowHeight="200" id="9pb-U1-NVK" userLabel="collectionContainerCell" customClass="CollectionContainerTableCell" customModule="Medenjaci" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="200"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9pb-U1-NVK" id="QQe-X9-JdF">
@@ -806,7 +806,7 @@
                                     <outlet property="label" destination="Xr7-3J-5gZ" id="sn8-Rf-g1g"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="priceCell" textLabel="O6G-A0-DVW" rowHeight="37" style="IBUITableViewCellStyleDefault" id="8mV-sb-VU0" userLabel="Price cell" customClass="StyledTableViewCell" customModule="Medenjaci" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="priceCell" textLabel="O6G-A0-DVW" rowHeight="37" style="IBUITableViewCellStyleDefault" id="8mV-sb-VU0" userLabel="Price cell" customClass="StyledTableCell" customModule="Medenjaci" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="410" width="414" height="37"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8mV-sb-VU0" id="MgE-qa-VCc">
@@ -999,7 +999,7 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" name="backgroundColor"/>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="orderInfoCell" textLabel="0Uv-2q-D47" detailTextLabel="b3K-8r-GrU" style="IBUITableViewCellStyleSubtitle" id="eMn-TQ-56c" userLabel="Order info cell" customClass="StyledTableViewCell" customModule="Medenjaci" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="orderInfoCell" textLabel="0Uv-2q-D47" detailTextLabel="b3K-8r-GrU" style="IBUITableViewCellStyleSubtitle" id="eMn-TQ-56c" userLabel="Order info cell" customClass="StyledTableCell" customModule="Medenjaci" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="145" width="414" height="58.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eMn-TQ-56c" id="mKa-eN-DTF">

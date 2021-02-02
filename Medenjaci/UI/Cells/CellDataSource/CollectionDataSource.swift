@@ -9,12 +9,12 @@ import Foundation
 import UIKit
 
 public class CollectionDataSource: NSObject, UICollectionViewDataSource, UICollectionViewDelegate {
-    private weak var containerCell: CollectionContainerTableViewCell?
+    private weak var containerCell: CollectionContainerTableCell?
     private weak var collectionView: UICollectionView!
     private var items: [LightProduct]
     public weak var actionDelegate: CollectionContainerActionDelegate?
 
-    init(containerCell: CollectionContainerTableViewCell,
+    init(containerCell: CollectionContainerTableCell,
          collectionView: UICollectionView,
          items: [LightProduct],
          actionDelegate: CollectionContainerActionDelegate? = nil) {

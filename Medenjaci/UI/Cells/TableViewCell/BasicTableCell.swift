@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BasicTableCell: StyledTableViewCell {
+class BasicTableCell: StyledTableCell {
     
     @IBOutlet weak var label: UILabel!
     

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class QuaternaryTableCell: StyledTableViewCell {
+class QuaternaryTableCell: StyledTableCell {
 
     @IBOutlet weak var primaryLabel: UILabel!
     @IBOutlet weak var secondaryLabel: UILabel!
