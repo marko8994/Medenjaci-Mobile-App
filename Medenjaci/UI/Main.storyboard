@@ -129,20 +129,20 @@
                                 <color key="backgroundColor" name="backgroundColor"/>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="orderNotesCell" id="gC5-5U-SFs" userLabel="Order notes cell" customClass="TextFieldTableCell" customModule="Medenjaci" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="188.5" width="414" height="75"/>
+                                <rect key="frame" x="0.0" y="188.5" width="414" height="76"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gC5-5U-SFs" id="dry-oR-hFJ">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="76"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order notes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTZ-lV-Pdp" userLabel="Order notes label">
-                                            <rect key="frame" x="15" y="0.0" width="91" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <rect key="frame" x="15" y="0.0" width="96" height="22"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <color key="textColor" name="primaryTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your order notes" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xKh-z5-mq1">
-                                            <rect key="frame" x="15" y="26" width="384" height="44"/>
+                                            <rect key="frame" x="15" y="27" width="384" height="44"/>
                                             <color key="backgroundColor" name="roundedTextFieldBackgroundColor"/>
                                             <color key="tintColor" name="primaryTextColor"/>
                                             <constraints>
@@ -174,7 +174,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="orderButtonCell" id="nXp-Fm-ax5" userLabel="Order button cell" customClass="SingleButtonCell" customModule="Medenjaci" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="263.5" width="414" height="44.5"/>
+                                <rect key="frame" x="0.0" y="264.5" width="414" height="44.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nXp-Fm-ax5" id="b5d-Aw-X5P">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="44.5"/>
@@ -208,7 +208,7 @@
                                 <color key="backgroundColor" name="backgroundColor"/>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="oldOrderCell" rowHeight="80" id="dy8-ZP-JjV" userLabel="PreviousOrderCell" customClass="QuaternaryTableCell" customModule="Medenjaci" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="308" width="414" height="80"/>
+                                <rect key="frame" x="0.0" y="309" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dy8-ZP-JjV" id="jFq-5j-ipb">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
@@ -800,7 +800,7 @@
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="10$" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="O6G-A0-DVW" userLabel="Price label">
                                             <rect key="frame" x="20" y="0.0" width="374" height="37"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                             <color key="textColor" name="primaryTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -808,8 +808,53 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" name="backgroundColor"/>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="itemAmountCell" id="XW2-54-fmU" userLabel="Item amount cell" customClass="TextFieldTableCell" customModule="Medenjaci" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="447" width="414" height="75"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XW2-54-fmU" id="25b-Fp-Vvr">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order amount" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNB-bT-4QN" userLabel="Item amount label">
+                                            <rect key="frame" x="15" y="0.0" width="112" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <color key="textColor" name="primaryTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your order notes" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fmB-rg-bBZ">
+                                            <rect key="frame" x="15" y="26" width="384" height="44"/>
+                                            <color key="backgroundColor" name="roundedTextFieldBackgroundColor"/>
+                                            <color key="tintColor" name="primaryTextColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="GCA-rQ-TtR"/>
+                                            </constraints>
+                                            <color key="textColor" name="primaryTextColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                    <color key="value" name="placeholderTextColor"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="gNB-bT-4QN" firstAttribute="leading" secondItem="25b-Fp-Vvr" secondAttribute="leading" constant="15" id="9mB-I6-iLC"/>
+                                        <constraint firstItem="fmB-rg-bBZ" firstAttribute="top" secondItem="gNB-bT-4QN" secondAttribute="bottom" constant="5" id="Acy-GL-br9"/>
+                                        <constraint firstItem="gNB-bT-4QN" firstAttribute="top" secondItem="25b-Fp-Vvr" secondAttribute="top" id="Fql-P6-was"/>
+                                        <constraint firstAttribute="trailing" secondItem="fmB-rg-bBZ" secondAttribute="trailing" constant="15" id="LLP-i5-Igm"/>
+                                        <constraint firstItem="fmB-rg-bBZ" firstAttribute="leading" secondItem="25b-Fp-Vvr" secondAttribute="leading" constant="15" id="T1G-4K-CuU"/>
+                                        <constraint firstAttribute="bottom" secondItem="fmB-rg-bBZ" secondAttribute="bottom" constant="5" id="WQX-bR-prP"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="backgroundColor"/>
+                                <connections>
+                                    <outlet property="infoLabel" destination="gNB-bT-4QN" id="4Yt-8y-Fvp"/>
+                                    <outlet property="textField" destination="fmB-rg-bBZ" id="sTZ-1R-CJZ"/>
+                                </connections>
+                            </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="orderButtonCell" id="6eX-cx-Vbf" userLabel="Order button cell" customClass="SingleButtonCell" customModule="Medenjaci" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="447" width="414" height="54"/>
+                                <rect key="frame" x="0.0" y="522" width="414" height="54"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6eX-cx-Vbf" id="WxZ-Zv-GpP">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="54"/>

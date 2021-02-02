@@ -39,6 +39,7 @@
 "Common.Pending" = "Pending";
 "Common.Rejected" = "Rejected";
 "Common.Price" = "Price";
+"Common.ItemAmount" = "Item amount:";
 "Placeholder.Name" = "Enter your name";
 "Placeholder.Email" = "Enter your email";
 "Placeholder.Address" = "Enter your address";
@@ -49,6 +50,7 @@
 "Placeholder.CustomerRequest" = "Enter your customer request here";
 "Placeholder.NewPassword" = "Enter your new password";
 "Placeholder.RepeatNewPassword" = "Enter your new password again";
+"Placeholder.ItemAmount" = "Enter amount your want to order";
 "Section.CurrentOrder" = "Current order summary";
 "Section.PreviousOrders" = "Previous orders";
 "Section.PersonalInfo" = "Personal info";

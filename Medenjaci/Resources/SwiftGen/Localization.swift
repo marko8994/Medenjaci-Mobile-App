@@ -30,6 +30,8 @@ internal enum Strings {
     internal static let email = Strings.tr("Localizable", "Common.Email")
     /// Forgot password?
     internal static let forgotPassword = Strings.tr("Localizable", "Common.ForgotPassword")
+    /// Item amount
+    internal static let itemAmount = Strings.tr("Localizable", "Common.ItemAmount")
     /// Name
     internal static let name = Strings.tr("Localizable", "Common.Name")
     /// New password
@@ -82,6 +84,8 @@ internal enum Strings {
     internal static let customerRequest = Strings.tr("Localizable", "Placeholder.CustomerRequest")
     /// Enter your email
     internal static let email = Strings.tr("Localizable", "Placeholder.Email")
+    /// Enter amount your want to order
+    internal static let itemAmount = Strings.tr("Localizable", "Placeholder.ItemAmount")
     /// Enter your name
     internal static let name = Strings.tr("Localizable", "Placeholder.Name")
     /// Enter your new password

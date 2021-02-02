@@ -10,14 +10,14 @@ import UIKit
 enum ProductDetailsSection: Int {
     case spotlight
     case description
-    case usageDirection
+    case usageDescription
     case price
-    case orderButton
+    case addToCart
 }
 
 class ProductDetailsTableViewController: UITableViewController {
     
-    var sections: [ProductDetailsSection] = [.spotlight, .description, .usageDirection, .price, .orderButton]
+    var sections: [ProductDetailsSection] = [.spotlight, .description, .usageDescription, .price, .addToCart]
     
     var productUid: String! {
         didSet {
@@ -30,6 +30,7 @@ class ProductDetailsTableViewController: UITableViewController {
         super.viewDidLoad()
         title = product.name
         tableView.contentInset.bottom = 50
+        tableView.keyboardDismissMode = .interactive
     }
 
     // MARK: - Table view data source
@@ -39,7 +40,11 @@ class ProductDetailsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        if sections[section] == .addToCart {
+            return 2
+        } else {
+            return 1
+        }
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -60,7 +65,7 @@ class ProductDetailsTableViewController: UITableViewController {
                     as? TableSpotlightCell else { break }
             cell.configure(with: product.imageName)
             return cell
-        case .description, .usageDirection:
+        case .description, .usageDescription:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "productDetailsCell", for: indexPath)
                     as? BasicTableCell else { break }
             if section == .description {
@@ -73,25 +78,35 @@ class ProductDetailsTableViewController: UITableViewController {
             let cell = tableView.dequeueReusableCell(withIdentifier: "priceCell", for: indexPath)
             cell.textLabel?.text = product.price
             return cell
-        case .orderButton:
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "orderButtonCell", for: indexPath)
-                as? SingleButtonCell else { break }
-            cell.buttonTitle = Strings.Title.addToCart
-            return cell
+        case .addToCart:
+            if indexPath.row == 0 {
+                guard let cell = tableView.dequeueReusableCell(withIdentifier: "itemAmountCell", for: indexPath)
+                    as? TextFieldTableCell else { break }
+                cell.infoText = Strings.Common.itemAmount
+                cell.placeholder = Strings.Placeholder.itemAmount
+                return cell
+            } else {
+                guard let cell = tableView.dequeueReusableCell(withIdentifier: "orderButtonCell", for: indexPath)
+                    as? SingleButtonCell else { break }
+                cell.buttonTitle = Strings.Title.addToCart
+                return cell
+            }
         }
         fatalError("Couldn't find cell for index path: \(String(describing: indexPath))")
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch sections[section] {
+        case .spotlight:
+            return nil
         case .description:
             return Strings.Section.description
-        case .usageDirection:
+        case .usageDescription:
             return Strings.Section.usageDirections
         case .price:
             return Strings.Common.price
-        case .spotlight, .orderButton:
-            return nil
+        case .addToCart:
+            return Strings.Title.addToCart
         }
     }
     
