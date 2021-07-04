@@ -43,7 +43,7 @@ class ResetPasswordViewController: UIViewController {
         }
         if MockData.shared.users.contains(where: {$0.email == email}) {
             let okAction = UIAlertAction(title: Strings.Common.ok, style: .default) { _ in
-                self.navigationController?.popViewController(animated: false)
+                self.navigationController?.popToRootViewController(animated: false)
             }
             let alert = UIAlertController(title: Strings.Alert.Title.passwordResetRequestSent,
                                           message: Strings.Alert.Message.passwordResetRequestSent,

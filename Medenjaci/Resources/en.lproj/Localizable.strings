@@ -84,9 +84,11 @@
 "Alert.Title.InvalidAddress" = "Addres is not valid";
 "Alert.Title.InvalidPhoneNumber" = "Phone number is not valid";
 "Alert.Title.InvalidPassword" = "Password is not valid";
+"Alert.Message.CantLoginWithoutEmailAndPassword" = "Can't login without email and password";
 "Alert.Message.UserRequestSent" = "Please check your email for confirmation link";
 "Alert.Message.PasswordResetRequestSent" = "Please check your email for reset password link";
 "Alert.Message.UserDoesntExist" = "User with entered email doesn't exist";
+"Alert.Message.CantMatchUserAndPassword" = "Username and password do not match";
 "Alert.Message.MaximumQuantityOfItemInOrder" = "Maximum quantity of one item in order is 10. If you want to make bigger order,
 please contact us directly.";
 "Alert.Message.ConfirmOrder" = "Are you sure you want to send your current order?";

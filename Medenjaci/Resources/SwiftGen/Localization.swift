@@ -19,6 +19,10 @@ internal enum Strings {
       internal static let confirm = Strings.tr("Localizable", "Alert.ButtonTitle.Confirm")
     }
     internal enum Message {
+      /// Can't login without email and password
+      internal static let cantLoginWithoutEmailAndPassword = Strings.tr("Localizable", "Alert.Message.CantLoginWithoutEmailAndPassword")
+      /// Username and password do not match
+      internal static let cantMatchUserAndPassword = Strings.tr("Localizable", "Alert.Message.CantMatchUserAndPassword")
       /// Are you sure you want to send your current order?
       internal static let confirmOrder = Strings.tr("Localizable", "Alert.Message.ConfirmOrder")
       /// Address must contain beetween 5 and 50 characters

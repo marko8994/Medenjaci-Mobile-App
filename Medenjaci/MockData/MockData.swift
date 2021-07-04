@@ -17,13 +17,13 @@ public class MockData {
     
     // Users
     var userOne = User(name: "Marko Mladenovic", email: "mmladenovic@gmail.com", address: "Strumicka 11, Beograd",
-                       phoneNumber: "+38162490867", password: "fewfewfew1")
+                       phoneNumber: "+38162490867", password: "Fewfewfew1")
     
     var userTwo = User(name: "Petar Petrovic", email: "ppetrovic@gmail.com", address: "Svetozara Markovica 9, Beograd",
-                       phoneNumber: "+38162491800", password: "petar123")
+                       phoneNumber: "+38162491800", password: "Petar123")
     
     var userThree = User(name: "Nikola Nikolic", email: "nnikolic@gmail.com", address: "Vojislava Ilica 4, Beograd",
-                         phoneNumber: "+38162400890", password: "nidza123")
+                         phoneNumber: "+38162400890", password: "Nidza123")
     
     lazy var users = [userOne, userTwo, userThree]
     
