@@ -11,7 +11,7 @@ import UIKit
 
 public typealias UserData = Any
 
-public protocol CollectionContainerActionDelegate: class {
+public protocol CollectionContainerActionDelegate: AnyObject {
     func cell(_ cell: CollectionContainerTableCell,
               collectionItemSelectedWithUserData userData: UserData?)
 }
