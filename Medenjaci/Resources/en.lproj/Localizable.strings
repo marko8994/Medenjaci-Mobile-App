@@ -77,8 +77,11 @@
 // Alerts
 "Alert.Title.Sorry" = "Sorry";
 "Alert.Title.LogoutConfirmation" = "Are you sure you want to logut?";
+"Alert.Title.ConfirmOrder" = "Confirm order";
 "Alert.Message.MaximumQuantityOfItemInOrder" = "Maximum quantity of one item in order is 10. If you want to make bigger order,
 please contact us directly.";
+"Alert.Message.ConfirmOrder" = "Are you sure you want to send your current order?";
+"Alert.ButtonTitle.Confirm" = "Confirm";
 
 // Toasts
 "Toast.ItemAddedToCart" = "%@ added to cart";

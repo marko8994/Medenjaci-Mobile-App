@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Toaster
 
 enum CartSection: Int {
     case orderItems = 0
@@ -15,8 +16,7 @@ enum CartSection: Int {
 
 enum OrderSummaryRow: Int {
     case orderAmount
-    case orderNotes
-    case orderButton
+    case order
 }
 
 class CartTableViewController: UITableViewController {
@@ -35,7 +35,9 @@ class CartTableViewController: UITableViewController {
     }
     
     var previousOrders: [Order]? {
-        return MockData.shared.previousOrders
+        didSet {
+            tableView.reloadData()
+        }
     }
     
     var currentOrder: Order? {
@@ -55,6 +57,7 @@ class CartTableViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         currentOrder = MockData.shared.currentOrder
+        previousOrders = MockData.shared.previousOrders.sorted {$0.date! > $1.date!}
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -79,7 +82,7 @@ class CartTableViewController: UITableViewController {
                 return 1
             }
         case .orderSummary:
-            return 3
+            return 2
         case .previousOrders:
             if let previousOrders = previousOrders {
                 return previousOrders.count
@@ -122,17 +125,7 @@ class CartTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        let section = sections[indexPath.section]
-        switch section {
-        case .orderItems, .previousOrders:
-            return UITableView.automaticDimension
-        case .orderSummary:
-            if OrderSummaryRow(rawValue: indexPath.row) == .orderButton {
-                return 54
-            } else {
-                return UITableView.automaticDimension
-            }
-        }
+        return UITableView.automaticDimension
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -170,18 +163,31 @@ class CartTableViewController: UITableViewController {
             guard let totalAmount = currentOrder?.totalAmount else { return nil }
             cell.textLabel?.text = Strings.Common.totalAmount(totalAmount)
             return cell
-        case .orderNotes:
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "orderNotesCell", for: indexPath)
-                as? TextFieldTableCell else { return nil }
-            cell.infoText = Strings.Common.orderNotes
-            cell.placeholder = Strings.Placeholder.orderNotes
-            return cell
-        case .orderButton:
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "orderButtonCell", for: indexPath)
-                as? SingleButtonCell else { return nil }
+        case .order:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "orderCell", for: indexPath)
+                as? TextFieldAndButtonTableCell else { return nil }
+            cell.textFieldPlaceholder = Strings.Placeholder.orderNotes
             cell.buttonTitle = Strings.Title.order
             cell.buttonAction = {
-                return
+                let cancelAction = UIAlertAction(title: Strings.Common.cancel, style: .cancel)
+                let confirmAction = UIAlertAction(title: Strings.Alert.ButtonTitle.confirm, style: .default) { _ in
+                    var orderNotes: String?
+                    if let notes = cell.textField.text {
+                        orderNotes = notes
+                    }
+                    var currentOrder = MockData.shared.currentOrder!
+                    currentOrder.orderNotes = orderNotes
+                    currentOrder.date = Date()
+                    currentOrder.status = .pending
+                    MockData.shared.previousOrders.append(currentOrder)
+                    self.previousOrders = MockData.shared.previousOrders.sorted {$0.date! > $1.date!}
+                    self.currentOrder = nil
+                    MockData.shared.currentOrder = nil
+                }
+                let alert = UIAlertController(title: Strings.Alert.Title.confirmOrder,
+                                              message: Strings.Alert.Message.confirmOrder,
+                                              actions: [cancelAction, confirmAction])
+                self.present(alert, animated: false)
             }
             return cell
         case .none:

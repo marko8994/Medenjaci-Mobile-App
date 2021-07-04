@@ -128,90 +128,67 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" name="backgroundColor"/>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="orderNotesCell" id="gC5-5U-SFs" userLabel="Order notes cell" customClass="TextFieldTableCell" customModule="Medenjaci" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="185" width="414" height="75"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gC5-5U-SFs" id="dry-oR-hFJ">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order notes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTZ-lV-Pdp" userLabel="Order notes label">
-                                            <rect key="frame" x="15" y="0.0" width="95" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                            <color key="textColor" name="primaryTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your order notes" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xKh-z5-mq1">
-                                            <rect key="frame" x="15" y="26" width="384" height="44"/>
-                                            <color key="backgroundColor" name="roundedTextFieldBackgroundColor"/>
-                                            <color key="tintColor" name="primaryTextColor"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="44" id="bWQ-n2-nng"/>
-                                            </constraints>
-                                            <color key="textColor" name="primaryTextColor"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                            <textInputTraits key="textInputTraits"/>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
-                                                    <color key="value" name="placeholderTextColor"/>
-                                                </userDefinedRuntimeAttribute>
-                                            </userDefinedRuntimeAttributes>
-                                        </textField>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="xKh-z5-mq1" firstAttribute="top" secondItem="cTZ-lV-Pdp" secondAttribute="bottom" constant="5" id="AIf-YY-Gz1"/>
-                                        <constraint firstAttribute="trailing" secondItem="xKh-z5-mq1" secondAttribute="trailing" constant="15" id="LUH-A9-K4h"/>
-                                        <constraint firstItem="cTZ-lV-Pdp" firstAttribute="leading" secondItem="dry-oR-hFJ" secondAttribute="leading" constant="15" id="OD7-7o-mNe"/>
-                                        <constraint firstItem="xKh-z5-mq1" firstAttribute="leading" secondItem="dry-oR-hFJ" secondAttribute="leading" constant="15" id="XKp-PG-qVW"/>
-                                        <constraint firstItem="cTZ-lV-Pdp" firstAttribute="top" secondItem="dry-oR-hFJ" secondAttribute="top" id="YrR-CE-kVt"/>
-                                        <constraint firstAttribute="bottom" secondItem="xKh-z5-mq1" secondAttribute="bottom" constant="5" id="ZqX-WF-SkP"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <color key="backgroundColor" name="backgroundColor"/>
-                                <connections>
-                                    <outlet property="infoLabel" destination="cTZ-lV-Pdp" id="Ant-5p-Vcu"/>
-                                    <outlet property="textField" destination="xKh-z5-mq1" id="7Dv-aK-lre"/>
-                                </connections>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="orderButtonCell" id="nXp-Fm-ax5" userLabel="Order button cell" customClass="SingleButtonCell" customModule="Medenjaci" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="260" width="414" height="54.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="orderCell" id="nXp-Fm-ax5" userLabel="Order cell" customClass="TextFieldAndButtonTableCell" customModule="Medenjaci" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="185" width="414" height="108.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nXp-Fm-ax5" id="b5d-Aw-X5P">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="54.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="108.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqV-iZ-oLm" userLabel="Order button">
-                                            <rect key="frame" x="15" y="5" width="384" height="44.5"/>
-                                            <color key="backgroundColor" name="primaryButton"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="44" id="a8m-nL-kwg"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                            <state key="normal" title="Order">
-                                                <color key="titleColor" name="primaryButtonTextColor"/>
-                                            </state>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                    <integer key="value" value="5"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
-                                            </userDefinedRuntimeAttributes>
-                                        </button>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="LSh-JX-4Bt">
+                                            <rect key="frame" x="15" y="5" width="384" height="98.5"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your order notes" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xKh-z5-mq1">
+                                                    <rect key="frame" x="0.0" y="0.0" width="384" height="44"/>
+                                                    <color key="backgroundColor" name="roundedTextFieldBackgroundColor"/>
+                                                    <color key="tintColor" name="primaryTextColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="bWQ-n2-nng"/>
+                                                    </constraints>
+                                                    <color key="textColor" name="primaryTextColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                            <color key="value" name="placeholderTextColor"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </textField>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqV-iZ-oLm" userLabel="Order button">
+                                                    <rect key="frame" x="0.0" y="54" width="384" height="44.5"/>
+                                                    <color key="backgroundColor" name="primaryButton"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="a8m-nL-kwg"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <state key="normal" title="Order">
+                                                        <color key="titleColor" name="primaryButtonTextColor"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="gqV-iZ-oLm" firstAttribute="leading" secondItem="b5d-Aw-X5P" secondAttribute="leading" constant="15" id="Isv-n1-Fqe"/>
-                                        <constraint firstAttribute="bottom" secondItem="gqV-iZ-oLm" secondAttribute="bottom" constant="5" id="OH0-6S-w8K"/>
-                                        <constraint firstItem="gqV-iZ-oLm" firstAttribute="top" secondItem="b5d-Aw-X5P" secondAttribute="top" constant="5" id="chR-av-ZPr"/>
-                                        <constraint firstAttribute="trailing" secondItem="gqV-iZ-oLm" secondAttribute="trailing" constant="15" id="jGo-G6-2gs"/>
+                                        <constraint firstItem="LSh-JX-4Bt" firstAttribute="top" secondItem="b5d-Aw-X5P" secondAttribute="top" constant="5" id="MUO-vK-qQb"/>
+                                        <constraint firstItem="LSh-JX-4Bt" firstAttribute="leading" secondItem="b5d-Aw-X5P" secondAttribute="leading" constant="15" id="SaH-jo-llv"/>
+                                        <constraint firstAttribute="trailing" secondItem="LSh-JX-4Bt" secondAttribute="trailing" constant="15" id="SfH-S5-V0e"/>
+                                        <constraint firstAttribute="bottom" secondItem="LSh-JX-4Bt" secondAttribute="bottom" constant="5" id="sjU-vb-kh0"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" name="backgroundColor"/>
                                 <connections>
                                     <outlet property="button" destination="gqV-iZ-oLm" id="8pn-pP-lE5"/>
+                                    <outlet property="textField" destination="xKh-z5-mq1" id="cLj-Bn-vx2"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="oldOrderCell" rowHeight="80" id="dy8-ZP-JjV" userLabel="PreviousOrderCell" customClass="QuaternaryTableCell" customModule="Medenjaci" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="314.5" width="414" height="80"/>
+                                <rect key="frame" x="0.0" y="293.5" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dy8-ZP-JjV" id="jFq-5j-ipb">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>

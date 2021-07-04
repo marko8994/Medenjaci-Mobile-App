@@ -35,7 +35,7 @@ public class MockData {
                               arrivalEstimate: nil)
     
     lazy var orderThree =  Order(uid: 3, orderItems: orderItemsTwo, totalAmount: 25,
-                                 date: Date.date(from: "4/07/2021"), status: .pending,
+                                 date: Date.date(from: "4/06/2021"), status: .approved,
                                  orderNotes: "Pack both botles of syrup separately",
                                  rejectionReason: nil, arrivalEstimate: 4)
     

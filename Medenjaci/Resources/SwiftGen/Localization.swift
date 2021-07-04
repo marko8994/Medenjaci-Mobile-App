@@ -14,11 +14,19 @@ internal enum Strings {
   internal static let medenjaci = Strings.tr("Localizable", "Medenjaci")
 
   internal enum Alert {
+    internal enum ButtonTitle {
+      /// Confirm
+      internal static let confirm = Strings.tr("Localizable", "Alert.ButtonTitle.Confirm")
+    }
     internal enum Message {
+      /// Are you sure you want to send your current order?
+      internal static let confirmOrder = Strings.tr("Localizable", "Alert.Message.ConfirmOrder")
       /// Maximum quantity of one item in order is 10. If you want to make bigger order,\nplease contact us directly.
       internal static let maximumQuantityOfItemInOrder = Strings.tr("Localizable", "Alert.Message.MaximumQuantityOfItemInOrder")
     }
     internal enum Title {
+      /// Confirm order
+      internal static let confirmOrder = Strings.tr("Localizable", "Alert.Title.ConfirmOrder")
       /// Are you sure you want to logut?
       internal static let logoutConfirmation = Strings.tr("Localizable", "Alert.Title.LogoutConfirmation")
       /// Sorry
@@ -182,7 +190,7 @@ internal enum Strings {
   }
 
   internal enum Toast {
-    /// Item %@ added to cart
+    /// %@ added to cart
     internal static func itemAddedToCart(_ p1: Any) -> String {
       return Strings.tr("Localizable", "Toast.ItemAddedToCart", String(describing: p1))
     }

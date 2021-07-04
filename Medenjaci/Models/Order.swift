@@ -28,10 +28,10 @@ public struct Order: Decodable {
     let uid: Int
     var orderItems: [OrderItem]
     var totalAmount: Int
-    let date: Date?
-    let status: OrderStatus?
-    let orderNotes: String?
-    let rejectionReason: String?
+    var date: Date?
+    var status: OrderStatus?
+    var orderNotes: String?
+    var rejectionReason: String?
     let arrivalEstimate: Int?
 }
 
