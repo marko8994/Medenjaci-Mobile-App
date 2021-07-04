@@ -32,6 +32,7 @@ class ProfileTableViewController: UITableViewController {
         super.viewDidLoad()
         title = Strings.Title.profile
         tableView.keyboardDismissMode = .interactive
+        tableView.contentInset.bottom = 50
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     

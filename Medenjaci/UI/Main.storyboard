@@ -65,31 +65,31 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Tb5-yP-OG1">
-                                            <rect key="frame" x="10" y="10" width="115" height="60"/>
+                                            <rect key="frame" x="10" y="10" width="113" height="60"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Propolis drops" textAlignment="natural" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DiX-HM-Tc9" userLabel="Product name">
-                                                    <rect key="frame" x="0.0" y="0.0" width="115" height="18.5"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="113" height="18.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                     <color key="textColor" name="primaryTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quantity: 2" textAlignment="natural" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQf-ty-CPk" userLabel="Product quantity">
-                                                    <rect key="frame" x="0.0" y="20.5" width="79.5" height="19"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                    <rect key="frame" x="0.0" y="20.5" width="86" height="19"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                     <color key="textColor" name="primaryTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unit price: 5$" textAlignment="natural" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZ0-Bh-AMB" userLabel="Unit price">
-                                                    <rect key="frame" x="0.0" y="41.5" width="95.5" height="18.5"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                                    <rect key="frame" x="0.0" y="41.5" width="106" height="18.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                     <color key="textColor" name="primaryTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </stackView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10$" textAlignment="natural" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xYa-zu-sql" userLabel="Price">
-                                            <rect key="frame" x="374" y="10" width="30" height="20.5"/>
-                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                            <rect key="frame" x="375" y="10" width="29" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                             <color key="textColor" name="primaryTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -120,7 +120,7 @@
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Total: 10$" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5NM-cH-nzC" userLabel="Total ammount label">
                                             <rect key="frame" x="20" y="0.0" width="374" height="37"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                             <color key="textColor" name="primaryTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -129,20 +129,20 @@
                                 <color key="backgroundColor" name="backgroundColor"/>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="orderNotesCell" id="gC5-5U-SFs" userLabel="Order notes cell" customClass="TextFieldTableCell" customModule="Medenjaci" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="188.5" width="414" height="76"/>
+                                <rect key="frame" x="0.0" y="188.5" width="414" height="75"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gC5-5U-SFs" id="dry-oR-hFJ">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="76"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order notes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTZ-lV-Pdp" userLabel="Order notes label">
-                                            <rect key="frame" x="15" y="0.0" width="96" height="22"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <rect key="frame" x="15" y="0.0" width="95" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                             <color key="textColor" name="primaryTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your order notes" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xKh-z5-mq1">
-                                            <rect key="frame" x="15" y="27" width="384" height="44"/>
+                                            <rect key="frame" x="15" y="26" width="384" height="44"/>
                                             <color key="backgroundColor" name="roundedTextFieldBackgroundColor"/>
                                             <color key="tintColor" name="primaryTextColor"/>
                                             <constraints>
@@ -174,14 +174,14 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="orderButtonCell" id="nXp-Fm-ax5" userLabel="Order button cell" customClass="SingleButtonCell" customModule="Medenjaci" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="264.5" width="414" height="44.5"/>
+                                <rect key="frame" x="0.0" y="263.5" width="414" height="54.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nXp-Fm-ax5" id="b5d-Aw-X5P">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="54.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqV-iZ-oLm" userLabel="Order button">
-                                            <rect key="frame" x="15" y="0.0" width="384" height="44.5"/>
+                                            <rect key="frame" x="15" y="5" width="384" height="44.5"/>
                                             <color key="backgroundColor" name="primaryButton"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="44" id="a8m-nL-kwg"/>
@@ -200,32 +200,35 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="gqV-iZ-oLm" firstAttribute="leading" secondItem="b5d-Aw-X5P" secondAttribute="leading" constant="15" id="Isv-n1-Fqe"/>
-                                        <constraint firstAttribute="bottom" secondItem="gqV-iZ-oLm" secondAttribute="bottom" id="OH0-6S-w8K"/>
-                                        <constraint firstItem="gqV-iZ-oLm" firstAttribute="top" secondItem="b5d-Aw-X5P" secondAttribute="top" id="chR-av-ZPr"/>
+                                        <constraint firstAttribute="bottom" secondItem="gqV-iZ-oLm" secondAttribute="bottom" constant="5" id="OH0-6S-w8K"/>
+                                        <constraint firstItem="gqV-iZ-oLm" firstAttribute="top" secondItem="b5d-Aw-X5P" secondAttribute="top" constant="5" id="chR-av-ZPr"/>
                                         <constraint firstAttribute="trailing" secondItem="gqV-iZ-oLm" secondAttribute="trailing" constant="15" id="jGo-G6-2gs"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" name="backgroundColor"/>
+                                <connections>
+                                    <outlet property="button" destination="gqV-iZ-oLm" id="8pn-pP-lE5"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="oldOrderCell" rowHeight="80" id="dy8-ZP-JjV" userLabel="PreviousOrderCell" customClass="QuaternaryTableCell" customModule="Medenjaci" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="309" width="414" height="80"/>
+                                <rect key="frame" x="0.0" y="318" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dy8-ZP-JjV" id="jFq-5j-ipb">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="2eY-IR-eza">
-                                            <rect key="frame" x="10" y="10" width="139" height="60"/>
+                                            <rect key="frame" x="10" y="10" width="136" height="60"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date: 25/10/2020" textAlignment="natural" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMe-QN-0y6" userLabel="Order date">
-                                                    <rect key="frame" x="0.0" y="0.0" width="139" height="18.5"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="136" height="18.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                     <color key="textColor" name="primaryTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price: 10$" textAlignment="natural" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFt-Q5-o5m" userLabel="Order price">
-                                                    <rect key="frame" x="0.0" y="20.5" width="79.5" height="19"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <rect key="frame" x="0.0" y="20.5" width="78" height="19"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                     <color key="textColor" name="primaryTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -237,14 +240,24 @@
                                                 </label>
                                             </subviews>
                                         </stackView>
+                                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOx-X1-HJp" userLabel="Disclosure button">
+                                            <rect key="frame" x="391.5" y="26.5" width="12.5" height="27"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                            <state key="normal" image="chevron.forward" catalog="system">
+                                                <color key="titleColor" name="primaryTextColor"/>
+                                            </state>
+                                        </button>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="eOx-X1-HJp" secondAttribute="trailing" constant="10" id="Dpi-qe-v3J"/>
                                         <constraint firstAttribute="bottom" secondItem="2eY-IR-eza" secondAttribute="bottom" constant="10" id="VAb-xP-0ka"/>
                                         <constraint firstItem="2eY-IR-eza" firstAttribute="top" secondItem="jFq-5j-ipb" secondAttribute="top" constant="10" id="iaN-Hg-dmx"/>
                                         <constraint firstItem="2eY-IR-eza" firstAttribute="leading" secondItem="jFq-5j-ipb" secondAttribute="leading" constant="10" id="icg-DL-tZ6"/>
+                                        <constraint firstItem="eOx-X1-HJp" firstAttribute="centerY" secondItem="jFq-5j-ipb" secondAttribute="centerY" id="kMi-ix-1cp"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" name="backgroundColor"/>
+                                <color key="tintColor" name="primaryTextColor"/>
                                 <connections>
                                     <outlet property="primaryLabel" destination="nMe-QN-0y6" id="aKK-6b-a19"/>
                                     <outlet property="secondaryLabel" destination="bFt-Q5-o5m" id="rDN-Vb-ub5"/>
@@ -258,6 +271,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="Vqt-LG-WEd"/>
+                    <connections>
+                        <segue destination="P7j-Ub-KBr" kind="show" identifier="orderDetails" id="IC5-RC-VTM"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pPN-Nr-wPa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -273,7 +289,7 @@
                         <color key="backgroundColor" name="backgroundColor"/>
                         <color key="separatorColor" name="backgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="personalInfoCell" textLabel="os6-uZ-X4o" detailTextLabel="5Yw-nf-qBc" style="IBUITableViewCellStyleSubtitle" id="KVk-Ic-xxz" userLabel="Personal info cell" customClass="StyledTableViewCell" customModule="Medenjaci" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="personalInfoCell" textLabel="os6-uZ-X4o" detailTextLabel="5Yw-nf-qBc" style="IBUITableViewCellStyleSubtitle" id="KVk-Ic-xxz" userLabel="Personal info cell" customClass="StyledTableCell" customModule="Medenjaci" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="60.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KVk-Ic-xxz" id="C2c-hf-wYj">
@@ -341,7 +357,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="54.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWm-Aq-Pjw" userLabel="Button">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWm-Aq-Pjw" userLabel="Change personal info button">
                                             <rect key="frame" x="15" y="5" width="384" height="44.5"/>
                                             <color key="backgroundColor" name="primaryButton"/>
                                             <constraints>
@@ -385,7 +401,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eGY-1d-7ak" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1673.913043478261" y="1046.6517857142858"/>
+            <point key="canvasLocation" x="1664" y="1047"/>
         </scene>
         <!--SetUpUserInfoVC-->
         <scene sceneID="KSo-Pr-Elc">
@@ -406,7 +422,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="backgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="collectionContainerCell" rowHeight="200" id="9pb-U1-NVK" userLabel="collectionContainerCell" customClass="CollectionContainerTableViewCell" customModule="Medenjaci" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="collectionContainerCell" rowHeight="200" id="9pb-U1-NVK" userLabel="collectionContainerCell" customClass="CollectionContainerTableCell" customModule="Medenjaci" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="200"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9pb-U1-NVK" id="QQe-X9-JdF">
@@ -790,7 +806,7 @@
                                     <outlet property="label" destination="Xr7-3J-5gZ" id="sn8-Rf-g1g"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="priceCell" textLabel="O6G-A0-DVW" rowHeight="37" style="IBUITableViewCellStyleDefault" id="8mV-sb-VU0" userLabel="Price cell" customClass="StyledTableViewCell" customModule="Medenjaci" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="priceCell" textLabel="O6G-A0-DVW" rowHeight="37" style="IBUITableViewCellStyleDefault" id="8mV-sb-VU0" userLabel="Price cell" customClass="StyledTableCell" customModule="Medenjaci" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="410" width="414" height="37"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8mV-sb-VU0" id="MgE-qa-VCc">
@@ -902,9 +918,128 @@
             </objects>
             <point key="canvasLocation" x="2735" y="-332"/>
         </scene>
+        <!--Order details-->
+        <scene sceneID="ESA-w7-OsY">
+            <objects>
+                <tableViewController id="P7j-Ub-KBr" userLabel="Order details" customClass="OrderDetailsViewController" customModule="Medenjaci" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="J8h-yn-H95">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
+                        <color key="separatorColor" name="backgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="orderItemCell" rowHeight="80" id="bLS-Jn-sU9" userLabel="Order Item Cell" customClass="QuaternaryTableCell" customModule="Medenjaci" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bLS-Jn-sU9" id="Lup-qa-twY">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="rL6-h5-AJd">
+                                            <rect key="frame" x="10" y="10" width="113" height="60"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Propolis drops" textAlignment="natural" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R2R-nu-PnE" userLabel="Product name">
+                                                    <rect key="frame" x="0.0" y="0.0" width="113" height="18.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                    <color key="textColor" name="primaryTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quantity: 2" textAlignment="natural" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zvE-0q-GO7" userLabel="Product quantity">
+                                                    <rect key="frame" x="0.0" y="20.5" width="86" height="19"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                    <color key="textColor" name="primaryTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unit price: 5$" textAlignment="natural" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROU-BW-bkI" userLabel="Unit price">
+                                                    <rect key="frame" x="0.0" y="41.5" width="106" height="18.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                    <color key="textColor" name="primaryTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10$" textAlignment="natural" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qwk-ct-lYi" userLabel="Price">
+                                            <rect key="frame" x="375" y="10" width="29" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                            <color key="textColor" name="primaryTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="Qwk-ct-lYi" secondAttribute="trailing" constant="10" id="7uk-KR-Cqe"/>
+                                        <constraint firstItem="rL6-h5-AJd" firstAttribute="leading" secondItem="Lup-qa-twY" secondAttribute="leading" constant="10" id="FuO-Fv-b0h"/>
+                                        <constraint firstItem="Qwk-ct-lYi" firstAttribute="top" secondItem="Lup-qa-twY" secondAttribute="top" constant="10" id="L4g-Ti-ej0"/>
+                                        <constraint firstAttribute="bottom" secondItem="rL6-h5-AJd" secondAttribute="bottom" constant="10" id="Ywf-Gp-DIl"/>
+                                        <constraint firstItem="rL6-h5-AJd" firstAttribute="top" secondItem="Lup-qa-twY" secondAttribute="top" constant="10" id="lAp-K8-odw"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="backgroundColor"/>
+                                <connections>
+                                    <outlet property="primaryLabel" destination="R2R-nu-PnE" id="snT-3N-reS"/>
+                                    <outlet property="quaternaryLabel" destination="Qwk-ct-lYi" id="EoC-hI-WyQ"/>
+                                    <outlet property="secondaryLabel" destination="zvE-0q-GO7" id="whl-iw-ugU"/>
+                                    <outlet property="tertiaryLabel" destination="ROU-BW-bkI" id="MK7-82-Gw0"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="orderAmountCell" textLabel="64X-dx-Dcv" rowHeight="37" style="IBUITableViewCellStyleDefault" id="7bi-eG-P2l" userLabel="Order amount cell">
+                                <rect key="frame" x="0.0" y="108" width="414" height="37"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7bi-eG-P2l" id="nOA-hM-H09">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="37"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Total: 10$" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="64X-dx-Dcv" userLabel="Total ammount label">
+                                            <rect key="frame" x="20" y="0.0" width="374" height="37"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                            <color key="textColor" name="primaryTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="backgroundColor"/>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="orderInfoCell" textLabel="0Uv-2q-D47" detailTextLabel="b3K-8r-GrU" style="IBUITableViewCellStyleSubtitle" id="eMn-TQ-56c" userLabel="Order info cell" customClass="StyledTableCell" customModule="Medenjaci" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="145" width="414" height="58.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eMn-TQ-56c" id="mKa-eN-DTF">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="58.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0Uv-2q-D47">
+                                            <rect key="frame" x="20" y="8" width="35" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                            <color key="textColor" name="primaryTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="b3K-8r-GrU">
+                                            <rect key="frame" x="20" y="31.5" width="50" height="17"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" name="primaryTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="backgroundColor"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="P7j-Ub-KBr" id="V0Y-pi-b7s"/>
+                            <outlet property="delegate" destination="P7j-Ub-KBr" id="ePn-1Y-jco"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="INP-Om-PiC"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L9x-fp-yg1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2735" y="329"/>
+        </scene>
     </scenes>
     <resources>
         <image name="cart" catalog="system" width="128" height="102"/>
+        <image name="chevron.forward" catalog="system" width="96" height="128"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
         <image name="rectangle.and.pencil.and.ellipsis" catalog="system" width="128" height="81"/>
         <namedColor name="backgroundColor">

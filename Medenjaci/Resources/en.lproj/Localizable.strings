@@ -18,6 +18,7 @@
 "Title.ResetPassword" = "Reset password";
 "Title.SendRequest" = "Send request";
 "Title.AddToCart" = "Add to cart";
+"Title.OrderDetails" = "Order details";
 "Common.Name" = "Name";
 "Common.Email" = "Email";
 "Common.Address" = "Address";
@@ -28,17 +29,23 @@
 "Common.NewPassword" = "New password";
 "Common.RepeatNewPassword" = "Repeat new password";
 "Common.Cart" = "Cart";
-"Common.TotalAmount" = "Total amount: %@";
+"Common.TotalAmount" = "Total amount: %d$";
 "Common.Quantity" = "Quantity: %d";
-"Common.UnitPrice" = "Unit price: %@";
+"Common.UnitPrice" = "Unit price: %@$";
 "Common.OrderNotes" = "Order notes:";
-"Common.Date" = "Date: %@";
-"Common.Amount" = "Amount: %@";
-"Common.Status" = "Status: %@";
-"Common.Delivered" = "Delivered";
+"Common.InlineOrderDate" = "Order date: %@";
+"Common.OrderDate" = "Order date";
+"Common.InlineStatus" = "Status: %@";
+"Common.Status" = "Status";
+"Common.Approved" = "Approved";
 "Common.Pending" = "Pending";
 "Common.Rejected" = "Rejected";
 "Common.Price" = "Price";
+"Common.DolarPrice" = "%d$";
+"Common.RejectionReason" = "Rejection reason";
+"Common.ArrivalEstimate" = "Arrival estimate";
+"Common.InDay" = "In %d day";
+"Common.InDays" = "In %d days";
 "Common.ItemAmount" = "Item amount:";
 "Placeholder.Name" = "Enter your name";
 "Placeholder.Email" = "Enter your email";
@@ -56,6 +63,9 @@
 "Section.PersonalInfo" = "Personal info";
 "Section.Description" = "Description";
 "Section.UsageDirections" = "Usage directions";
+"Section.OrderSummary" = "Order summary";
+"Section.AdditionalOrderInfo" = "Additional info";
+
 "Section.CustomerSupport" = "Customer support";
 "EmptySection.EmptyCurrentOrder" = "Cart is empty. Go to home page and add products.";
 "EmptySection.NoOlderOrders" = "You don't have old orders.";

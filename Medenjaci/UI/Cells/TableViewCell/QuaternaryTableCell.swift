@@ -7,7 +7,7 @@
 
 import UIKit
 
-class QuaternaryTableCell: StyledTableViewCell {
+class QuaternaryTableCell: StyledTableCell {
 
     @IBOutlet weak var primaryLabel: UILabel!
     @IBOutlet weak var secondaryLabel: UILabel!
@@ -18,26 +18,15 @@ class QuaternaryTableCell: StyledTableViewCell {
         primaryLabel.text = orderItem.productName
         secondaryLabel.text = Strings.Common.quantity(orderItem.quantity)
         tertiaryLabel.text = Strings.Common.unitPrice(orderItem.unitPrice)
-        quaternaryLabel.text = orderItem.price
+        quaternaryLabel.text = Strings.Common.dolarPrice(orderItem.price)
     }
     
     public func configure(with oldOrder: Order) {
-        primaryLabel.text = oldOrder.date?.shortDate()
-        secondaryLabel.text = Strings.Common.amount(oldOrder.totalAmount)
-        tertiaryLabel.text = Strings.Common.status(oldOrder.status?.name ?? "")
+        primaryLabel.text = Strings.Common.inlineOrderDate(oldOrder.date?.shortDate() ?? "")
+        secondaryLabel.text = Strings.Common.totalAmount(oldOrder.totalAmount)
+        tertiaryLabel.text = Strings.Common.inlineStatus(oldOrder.status?.name ?? "")
     }
 
-}
-
-private extension Date {
-    
-    func shortDate() -> String {
-        let formater = DateFormatter()
-        formater.dateStyle = .medium
-        formater.dateFormat = "d MM y"
-        return formater.string(from: self)
-    }
-    
 }
 
 

@@ -11,12 +11,12 @@ import UIKit
 
 public typealias UserData = Any
 
-public protocol CollectionContainerActionDelegate: class {
-    func cell(_ cell: CollectionContainerTableViewCell,
+public protocol CollectionContainerActionDelegate: AnyObject {
+    func cell(_ cell: CollectionContainerTableCell,
               collectionItemSelectedWithUserData userData: UserData?)
 }
 
-public class CollectionContainerTableViewCell: UITableViewCell {
+public class CollectionContainerTableCell: UITableViewCell {
 
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var collectionViewHeightConstraint: NSLayoutConstraint!
