@@ -28,9 +28,9 @@ class BasicCollectionCell: UICollectionViewCell {
     private func setLayout() {
         subviewsContainer.layer.borderWidth = 2
         subviewsContainer.layer.borderColor = Assets.Colors.cellBorderColor.color.cgColor
-        subviewsContainer.layer.cornerRadius = 15
+        subviewsContainer.layer.cornerRadius = 10
         subviewsContainer.layer.masksToBounds = true
-        imageView.layer.cornerRadius = 15
+        imageView.layer.cornerRadius = 10
         imageView.layer.masksToBounds = true
     }
 

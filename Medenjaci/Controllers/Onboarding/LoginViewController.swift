@@ -44,35 +44,37 @@ class LoginViewController: RegistrationFlowViewController {
     }
     
     @IBAction func loginButtonAction(_ sender: Any) {
-        guard let email = emailTextField.text, !email.isEmpty,
-              let password = passwordTextField.text, !password.isEmpty else {
-            let alert = UIAlertController(message: Strings.Alert.Message.cantLoginWithoutEmailAndPassword)
-            present(alert, animated: false)
-            return
-        }
-        guard email.isValidEmail else {
-            let alert = UIAlertController(message: Strings.Alert.Message.invalidEmail)
-            present(alert, animated: false)
-            return
-        }
-        guard let user = MockData.shared.users.first(where: {$0.email == email}) else {
-            let alert = UIAlertController(title: Strings.Alert.Title.sorry,
-                                          message: Strings.Alert.Message.userDoesntExist)
-            present(alert, animated: false)
-            return
-        }
-        guard password == user.password else {
-            let alert = UIAlertController(title: Strings.Alert.Title.sorry,
-                                          message: Strings.Alert.Message.cantMatchUserAndPassword)
-            present(alert, animated: false)
-            return
-        }
+//        guard let email = emailTextField.text, !email.isEmpty,
+//              let password = passwordTextField.text, !password.isEmpty else {
+//            let alert = UIAlertController(message: Strings.Alert.Message.cantLoginWithoutEmailAndPassword)
+//            present(alert, animated: false)
+//            return
+//        }
+//        guard email.isValidEmail else {
+//            let alert = UIAlertController(message: Strings.Alert.Message.invalidEmail)
+//            present(alert, animated: false)
+//            return
+//        }
+//        guard let user = MockData.shared.users.first(where: {$0.email == email}) else {
+//            let alert = UIAlertController(title: Strings.Alert.Title.sorry,
+//                                          message: Strings.Alert.Message.userDoesntExist)
+//            present(alert, animated: false)
+//            return
+//        }
+//        guard password == user.password else {
+//            let alert = UIAlertController(title: Strings.Alert.Title.sorry,
+//                                          message: Strings.Alert.Message.cantMatchUserAndPassword)
+//            present(alert, animated: false)
+//            return
+//        }
         let viewController = StoryboardScene.Main.initialScene.instantiate()
         let window = UIApplication.shared.windows.first!
         window.windowLevel = UIWindow.Level.normal
         window.rootViewController?.dismiss(animated: false, completion: nil)
         window.rootViewController?.removeFromParent()
         window.rootViewController = viewController
-        MockData.shared.currentUser = user
+        MockData.shared.currentUser = MockData.shared.users.first
+
+//        MockData.shared.currentUser = user
     }
 }
