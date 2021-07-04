@@ -6,22 +6,23 @@
 //
 
 import UIKit
+import Toaster
 
 enum ProductDetailsSection: Int {
     case spotlight
     case description
     case usageDescription
     case price
-    case addToCart
+    case order
 }
 
 class ProductDetailsTableViewController: UITableViewController {
     
-    var sections: [ProductDetailsSection] = [.spotlight, .description, .usageDescription, .price, .addToCart]
+    var sections: [ProductDetailsSection] = [.spotlight, .description, .usageDescription, .price, .order]
     
-    var productUid: String! {
+    var productUid: Int! {
         didSet {
-            product = MockData.shared.loadData("Product-\(productUid ?? "1")")
+            product = MockData.shared.loadData("Product-\(String(productUid))")
         }
     }
     var product: Product!
@@ -34,17 +35,12 @@ class ProductDetailsTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         return sections.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if sections[section] == .addToCart {
-            return 2
-        } else {
-            return 1
-        }
+        return 1
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -76,21 +72,11 @@ class ProductDetailsTableViewController: UITableViewController {
             return cell
         case .price:
             let cell = tableView.dequeueReusableCell(withIdentifier: "priceCell", for: indexPath)
-            cell.textLabel?.text = product.price
+            cell.textLabel?.text = String(product.price) + "$"
             return cell
-        case .addToCart:
-            if indexPath.row == 0 {
-                guard let cell = tableView.dequeueReusableCell(withIdentifier: "itemAmountCell", for: indexPath)
-                    as? TextFieldTableCell else { break }
-                cell.infoText = Strings.Common.itemAmount
-                cell.placeholder = Strings.Placeholder.itemAmount
-                return cell
-            } else {
-                guard let cell = tableView.dequeueReusableCell(withIdentifier: "orderButtonCell", for: indexPath)
-                    as? SingleButtonCell else { break }
-                cell.buttonTitle = Strings.Title.addToCart
-                return cell
-            }
+        case .order:
+            guard let cell = orderCell(for: indexPath) else { break }
+            return cell
         }
         fatalError("Couldn't find cell for index path: \(String(describing: indexPath))")
     }
@@ -105,8 +91,8 @@ class ProductDetailsTableViewController: UITableViewController {
             return Strings.Section.usageDirections
         case .price:
             return Strings.Common.price
-        case .addToCart:
-            return Strings.Title.addToCart
+        case .order:
+            return Strings.Title.order
         }
     }
     
@@ -117,5 +103,47 @@ class ProductDetailsTableViewController: UITableViewController {
             headerView.textLabel?.font = UIFont.systemFont(ofSize: 20, weight: .bold)
         }
     }
+    
+    private func orderCell(for indexPath: IndexPath) -> UITableViewCell? {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "orderCell", for: indexPath)
+            as? TextFieldAndButtonTableCell else { return nil }
+        cell.buttonTitle = Strings.Title.addToCart
+        cell.textFieldPlaceholder = Strings.Placeholder.itemAmount
+        cell.buttonAction = {
+            guard let itemAmount = cell.textField.text, let quantity = Int(itemAmount) else { return }
+            guard quantity < 10 else {
+                let alert = UIAlertController(title: Strings.Alert.Title.sorry,
+                                              message: Strings.Alert.Message.maximumQuantityOfItemInOrder)
+                self.present(alert, animated: false)
+                return
+            }
+            let orderItem = OrderItem(productName: self.product.name, quantity: quantity,
+                                      price: self.product.price * quantity, unitPrice: self.product.price)
+            if var currentOrder = MockData.shared.currentOrder {
+                currentOrder.orderItems.append(orderItem)
+                currentOrder.totalAmount += orderItem.price
+                MockData.shared.currentOrder = currentOrder
+            } else {
+                MockData.shared.currentOrder = Order(uid: MockData.shared.previousOrders.count + 1,
+                                                     orderItems: [orderItem], totalAmount: orderItem.price,
+                                                     date: nil, status: nil, orderNotes: nil,
+                                                     rejectionReason: nil, arrivalEstimate: nil)
+            }
+            Toast(text: Strings.Toast.itemAddedToCart(self.product.name)).show()
+            self.navigationController?.popViewController(animated: false)
+        }
+        return cell
+    }
+}
 
+// MARK: UITextField delegate
+extension ProductDetailsTableViewController: UITextFieldDelegate {
+    
+    func textField(_ textField: UITextField,
+                   shouldChangeCharactersIn range: NSRange,
+                   replacementString string: String) -> Bool {
+        let allowedCharacters = CharacterSet(charactersIn: "123456789")
+        let characterSet = CharacterSet(charactersIn: string)
+        return allowedCharacters.isSuperset(of: characterSet)
+    }
 }

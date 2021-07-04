@@ -56,6 +56,7 @@
 		ADBB6EF925BA55B70000D5DA /* StoryboardSegues.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBB6EF725BA55B70000D5DA /* StoryboardSegues.swift */; };
 		ADBB6EFA25BA55B70000D5DA /* StoryboardScenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBB6EF825BA55B70000D5DA /* StoryboardScenes.swift */; };
 		ADE003972691EF2000470E79 /* AlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE003962691EF2000470E79 /* AlertController+Extension.swift */; };
+		ADE0039926922C5600470E79 /* TextFieldAndButtonTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE0039826922C5600470E79 /* TextFieldAndButtonTableCell.swift */; };
 		FC49561CCDD7B9F7F22D2C1E /* libPods-Medenjaci.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 535EB3E617141D6EC67BA25A /* libPods-Medenjaci.a */; };
 /* End PBXBuildFile section */
 
@@ -139,6 +140,7 @@
 		ADBB6EF725BA55B70000D5DA /* StoryboardSegues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardSegues.swift; sourceTree = "<group>"; };
 		ADBB6EF825BA55B70000D5DA /* StoryboardScenes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardScenes.swift; sourceTree = "<group>"; };
 		ADE003962691EF2000470E79 /* AlertController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlertController+Extension.swift"; sourceTree = "<group>"; };
+		ADE0039826922C5600470E79 /* TextFieldAndButtonTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldAndButtonTableCell.swift; sourceTree = "<group>"; };
 		C80064622F53AA45C526E4B0 /* libPods-Medenjaci-MedenjaciUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Medenjaci-MedenjaciUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -292,6 +294,7 @@
 				AD947C9725C7884000FFFB1D /* TableSpotlightCell.swift */,
 				AD947C9C25C78AC700FFFB1D /* SingleButtonCell.swift */,
 				AD947E1C25C8B63300FFFB1D /* BasicTableCell.swift */,
+				ADE0039826922C5600470E79 /* TextFieldAndButtonTableCell.swift */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -637,6 +640,7 @@
 				AD5FEF0D25C1A6DE003E2472 /* SetUpUserInfoViewController.swift in Sources */,
 				AD16D10625C5BECD00CA9C57 /* Product.swift in Sources */,
 				AD16D0D725C4F92400CA9C57 /* RegistrationFlowViewController.swift in Sources */,
+				ADE0039926922C5600470E79 /* TextFieldAndButtonTableCell.swift in Sources */,
 				ADBB6EFA25BA55B70000D5DA /* StoryboardScenes.swift in Sources */,
 				AD16D18625C76C5000CA9C57 /* StyledTableCell.swift in Sources */,
 				AD16D15425C61C0400CA9C57 /* CartTableViewController.swift in Sources */,

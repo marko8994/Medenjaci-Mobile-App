@@ -37,6 +37,7 @@ internal enum Assets {
     internal static let styledCellBackgroundColor = ColorAsset(name: "styledCellBackgroundColor")
     internal static let tabBarTintColor = ColorAsset(name: "tabBarTintColor")
     internal static let textFieldBackgroundColor = ColorAsset(name: "textFieldBackgroundColor")
+    internal static let toastBackgroundColor = ColorAsset(name: "toastBackgroundColor")
   }
   internal enum Images {
     internal static let product1 = ImageAsset(name: "product-1")

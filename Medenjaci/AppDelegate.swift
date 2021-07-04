@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Toaster
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().barTintColor = Assets.Colors.navigationBarColor.color
         UINavigationBar.appearance().tintColor = Assets.Colors.navigationBarTintColor.color
         UINavigationBar.appearance().isTranslucent = false
+        ToastView.appearance().backgroundColor = Assets.Colors.toastBackgroundColor.color
+        ToastView.appearance().font = UIFont.systemFont(ofSize: 17)
+        ToastView.appearance().textColor = Assets.Colors.primaryTextColor.color
+        ToastView.appearance().cornerRadius = 10
         return true
     }
 

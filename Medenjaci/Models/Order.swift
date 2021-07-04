@@ -25,9 +25,9 @@ enum OrderStatus: String, Decodable {
 }
 
 public struct Order: Decodable {
-    let uid: String
-    let orderItems: [OrderItem]
-    let totalAmount: Int
+    let uid: Int
+    var orderItems: [OrderItem]
+    var totalAmount: Int
     let date: Date?
     let status: OrderStatus?
     let orderNotes: String?

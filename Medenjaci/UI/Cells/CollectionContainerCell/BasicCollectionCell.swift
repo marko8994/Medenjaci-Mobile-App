@@ -19,7 +19,7 @@ class BasicCollectionCell: UICollectionViewCell {
     public func configure(with product: LightProduct) {
         userData = product.uid
         titleLabel.text = product.name
-        subtitleLabel.text = product.price
+        subtitleLabel.text = String(product.price) + "$"
         imageView.image = UIImage(named: product.imageName)
         setNeedsLayout()
         layoutIfNeeded()

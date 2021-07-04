@@ -6,6 +6,7 @@
   
 */
 
+"Medenjaci" = "Medenjaci";
 "Welcome.Title" = "Welcome to";
 "Welcome.Description" = "Your favorite honey products store";
 "Welcome.ExistingAccount" = "Already have an account?";
@@ -74,4 +75,10 @@
 "EmptySection.NoOlderOrders" = "You don't have old orders.";
 
 // Alerts
+"Alert.Title.Sorry" = "Sorry";
 "Alert.Title.LogoutConfirmation" = "Are you sure you want to logut?";
+"Alert.Message.MaximumQuantityOfItemInOrder" = "Maximum quantity of one item in order is 10. If you want to make bigger order,
+please contact us directly.";
+
+// Toasts
+"Toast.ItemAddedToCart" = "%@ added to cart";

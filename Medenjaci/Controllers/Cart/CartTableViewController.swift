@@ -38,7 +38,11 @@ class CartTableViewController: UITableViewController {
         return MockData.shared.previousOrders
     }
     
-    var currentOrder = MockData.shared.currentOrder
+    var currentOrder: Order? {
+        didSet {
+            tableView.reloadData()
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,8 +52,13 @@ class CartTableViewController: UITableViewController {
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        currentOrder = MockData.shared.currentOrder
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if Segues(segue) == Segues.orderDetails, let orderUid = sender as? String,
+        if Segues(segue) == Segues.orderDetails, let orderUid = sender as? Int,
            let orderDetailsVC = segue.destination as? OrderDetailsViewController {
             orderDetailsVC.orderUid = orderUid
         }

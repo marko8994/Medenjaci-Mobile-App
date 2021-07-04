@@ -10,11 +10,19 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum Strings {
+  /// Medenjaci
+  internal static let medenjaci = Strings.tr("Localizable", "Medenjaci")
 
   internal enum Alert {
+    internal enum Message {
+      /// Maximum quantity of one item in order is 10. If you want to make bigger order,\nplease contact us directly.
+      internal static let maximumQuantityOfItemInOrder = Strings.tr("Localizable", "Alert.Message.MaximumQuantityOfItemInOrder")
+    }
     internal enum Title {
       /// Are you sure you want to logut?
       internal static let logoutConfirmation = Strings.tr("Localizable", "Alert.Title.LogoutConfirmation")
+      /// Sorry
+      internal static let sorry = Strings.tr("Localizable", "Alert.Title.Sorry")
     }
   }
 
@@ -171,6 +179,13 @@ internal enum Strings {
     internal static let resetPassword = Strings.tr("Localizable", "Title.ResetPassword")
     /// Send request
     internal static let sendRequest = Strings.tr("Localizable", "Title.SendRequest")
+  }
+
+  internal enum Toast {
+    /// Item %@ added to cart
+    internal static func itemAddedToCart(_ p1: Any) -> String {
+      return Strings.tr("Localizable", "Toast.ItemAddedToCart", String(describing: p1))
+    }
   }
 
   internal enum Welcome {
