@@ -34,4 +34,5 @@ class TextFieldAndButtonTableCell: UITableViewCell {
     @objc private func buttonTap() {
         buttonAction?()
     }
+    
 }

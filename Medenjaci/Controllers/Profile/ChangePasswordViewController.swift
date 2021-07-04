@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Toaster
 
 class ChangePasswordViewController: UIViewController {
 
@@ -34,5 +35,24 @@ class ChangePasswordViewController: UIViewController {
         newPasswordTextField.placeholder = Strings.Placeholder.newPassword
         repeatNewPasswordTextField.placeholder = Strings.Placeholder.repeatNewPassword
     }
+    
+    @IBAction func changePasswordButtonAction(_ sender: Any) {
+        guard let password = newPasswordTextField.text, let repeatedPassword = repeatNewPasswordTextField.text,
+              password == repeatedPassword else {
+            let alert = UIAlertController(message: Strings.Alert.Message.passwordsAreNotIdentical)
+            present(alert, animated: false)
+            return
+        }
+        guard password.isValidPassword else {
+            let alert = UIAlertController(title: Strings.Alert.Title.invalidPassword,
+                                          message: Strings.Alert.Message.invalidPassword)
+            present(alert, animated: false)
+            return
+        }
+        MockData.shared.currentUser?.password = password
+        Toast(text: Strings.Toast.passwordChanged).show()
+        navigationController?.popViewController(animated: false)
+    }
+    
 
 }

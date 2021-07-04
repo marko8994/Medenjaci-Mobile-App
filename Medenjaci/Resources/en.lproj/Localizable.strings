@@ -76,12 +76,36 @@
 
 // Alerts
 "Alert.Title.Sorry" = "Sorry";
+"Alert.Title.UserRequestSent" = "New user request sent";
+"Alert.Title.PasswordResetRequestSent" = "Password reset request sent";
 "Alert.Title.LogoutConfirmation" = "Are you sure you want to logut?";
 "Alert.Title.ConfirmOrder" = "Confirm order";
+"Alert.Title.InvalidName" = "Name is not valid";
+"Alert.Title.InvalidAddress" = "Addres is not valid";
+"Alert.Title.InvalidPhoneNumber" = "Phone number is not valid";
+"Alert.Title.InvalidPassword" = "Password is not valid";
+"Alert.Message.CantLoginWithoutEmailAndPassword" = "Can't login without email and password";
+"Alert.Message.UserRequestSent" = "Please check your email for confirmation link";
+"Alert.Message.PasswordResetRequestSent" = "Please check your email for reset password link";
+"Alert.Message.UserDoesntExist" = "User with entered email doesn't exist";
+"Alert.Message.CantMatchUserAndPassword" = "Username and password do not match";
 "Alert.Message.MaximumQuantityOfItemInOrder" = "Maximum quantity of one item in order is 10. If you want to make bigger order,
 please contact us directly.";
 "Alert.Message.ConfirmOrder" = "Are you sure you want to send your current order?";
+"Alert.Message.InvalidName" = "Name must contain contain beetween 5 and 30 characters";
+"Alert.Message.InvalidEmail" = "Email is not valid";
+"Alert.Message.InvalidAddress" = "Address must contain beetween 5 and 50 characters";
+"Alert.Message.InvalidPhoneNumber" = "Phone number must start with international country phone code. Example +381 for Serbia";
+"Alert.Message.InvalidPassword" = "Password must contain at least one uppercased letter and at least one number. Minimum lenght is 8 characters";
+"Alert.Message.PasswordsAreNotIdentical" = "Entered password are not identical";
 "Alert.ButtonTitle.Confirm" = "Confirm";
 
 // Toasts
 "Toast.ItemAddedToCart" = "%@ added to cart";
+"Toast.PersonalInfoUpdated" = "Personal info updated";
+"Toast.PasswordChanged" = "Password changed";
+"Toast.EmptyCustomerRequest" = "Can't send empty customer request";
+"Toast.CantAddToCartWithoutAmount" = "Can't add to cart without amount";
+"Toast.CustomerRequestSent" = "Customer request sent";
+
+
