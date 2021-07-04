@@ -25,13 +25,13 @@ enum OrderStatus: String, Decodable {
 }
 
 public struct Order: Decodable {
-    let uid: String
-    let orderItems: [OrderItem]
-    let totalAmount: Int
-    let date: Date?
-    let status: OrderStatus?
-    let orderNotes: String?
-    let rejectionReason: String?
+    let uid: Int
+    var orderItems: [OrderItem]
+    var totalAmount: Int
+    var date: Date?
+    var status: OrderStatus?
+    var orderNotes: String?
+    var rejectionReason: String?
     let arrivalEstimate: Int?
 }
 

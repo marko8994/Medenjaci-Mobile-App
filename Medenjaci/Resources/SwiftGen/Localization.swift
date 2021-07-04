@@ -10,6 +10,29 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum Strings {
+  /// Medenjaci
+  internal static let medenjaci = Strings.tr("Localizable", "Medenjaci")
+
+  internal enum Alert {
+    internal enum ButtonTitle {
+      /// Confirm
+      internal static let confirm = Strings.tr("Localizable", "Alert.ButtonTitle.Confirm")
+    }
+    internal enum Message {
+      /// Are you sure you want to send your current order?
+      internal static let confirmOrder = Strings.tr("Localizable", "Alert.Message.ConfirmOrder")
+      /// Maximum quantity of one item in order is 10. If you want to make bigger order,\nplease contact us directly.
+      internal static let maximumQuantityOfItemInOrder = Strings.tr("Localizable", "Alert.Message.MaximumQuantityOfItemInOrder")
+    }
+    internal enum Title {
+      /// Confirm order
+      internal static let confirmOrder = Strings.tr("Localizable", "Alert.Title.ConfirmOrder")
+      /// Are you sure you want to logut?
+      internal static let logoutConfirmation = Strings.tr("Localizable", "Alert.Title.LogoutConfirmation")
+      /// Sorry
+      internal static let sorry = Strings.tr("Localizable", "Alert.Title.Sorry")
+    }
+  }
 
   internal enum Common {
     /// Address
@@ -18,6 +41,8 @@ internal enum Strings {
     internal static let approved = Strings.tr("Localizable", "Common.Approved")
     /// Arrival estimate
     internal static let arrivalEstimate = Strings.tr("Localizable", "Common.ArrivalEstimate")
+    /// Cancel
+    internal static let cancel = Strings.tr("Localizable", "Common.Cancel")
     /// Cart
     internal static let cart = Strings.tr("Localizable", "Common.Cart")
     /// %d$
@@ -50,6 +75,8 @@ internal enum Strings {
     internal static let name = Strings.tr("Localizable", "Common.Name")
     /// New password
     internal static let newPassword = Strings.tr("Localizable", "Common.NewPassword")
+    /// OK
+    internal static let ok = Strings.tr("Localizable", "Common.Ok")
     /// Order date
     internal static let orderDate = Strings.tr("Localizable", "Common.OrderDate")
     /// Order notes:
@@ -146,6 +173,8 @@ internal enum Strings {
     internal static let changePersonalInfo = Strings.tr("Localizable", "Title.ChangePersonalInfo")
     /// Login
     internal static let login = Strings.tr("Localizable", "Title.Login")
+    /// Logut
+    internal static let logut = Strings.tr("Localizable", "Title.Logut")
     /// Order
     internal static let order = Strings.tr("Localizable", "Title.Order")
     /// Order details
@@ -158,6 +187,13 @@ internal enum Strings {
     internal static let resetPassword = Strings.tr("Localizable", "Title.ResetPassword")
     /// Send request
     internal static let sendRequest = Strings.tr("Localizable", "Title.SendRequest")
+  }
+
+  internal enum Toast {
+    /// %@ added to cart
+    internal static func itemAddedToCart(_ p1: Any) -> String {
+      return Strings.tr("Localizable", "Toast.ItemAddedToCart", String(describing: p1))
+    }
   }
 
   internal enum Welcome {

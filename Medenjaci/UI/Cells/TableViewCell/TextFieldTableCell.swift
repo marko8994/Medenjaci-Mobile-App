@@ -9,7 +9,6 @@ import UIKit
 
 class TextFieldTableCell: UITableViewCell {
 
-    @IBOutlet weak var infoLabel: UILabel!
     @IBOutlet weak var textField: UITextField!
     
     var placeholder: String? {
@@ -17,15 +16,4 @@ class TextFieldTableCell: UITableViewCell {
             textField.placeholder = placeholder
         }
     }
-    
-    var infoText: String? {
-        didSet {
-            infoLabel.text = infoText
-        }
-    }
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-
 }

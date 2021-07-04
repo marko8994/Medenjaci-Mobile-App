@@ -25,7 +25,7 @@ class OrderDetailsViewController: UITableViewController {
     
     var sections: [OrderDetailsSection] = [.summary, .amount, .additionalInfo]
     
-    var orderUid: String? {
+    var orderUid: Int? {
         didSet {
             order = MockData.shared.previousOrders.first(where: {$0.uid == orderUid})
         }

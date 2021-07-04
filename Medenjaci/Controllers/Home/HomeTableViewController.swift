@@ -15,14 +15,14 @@ class HomeTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Medenjaci"
+        title = Strings.medenjaci
         model = MockData.shared.loadData("Home")
         tableView.contentInset.bottom = 50
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if Segues(segue) == Segues.productDetails, let productUid = sender as? String,
+        if Segues(segue) == Segues.productDetails, let productUid = sender as? Int,
            let productDetailsVC = segue.destination as? ProductDetailsTableViewController {
             productDetailsVC.productUid = productUid
         }
@@ -69,7 +69,7 @@ extension HomeTableViewController: CollectionContainerActionDelegate {
     
     public func cell(_ cell: CollectionContainerTableCell,
                      collectionItemSelectedWithUserData userData: Any?) {
-        if let productUid = userData as? String {
+        if let productUid = userData as? Int {
             perform(segue: Segues.productDetails, sender: productUid)
         }
     }
