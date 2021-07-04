@@ -49,5 +49,6 @@ class LoginViewController: RegistrationFlowViewController {
         window.rootViewController?.dismiss(animated: false, completion: nil)
         window.rootViewController?.removeFromParent()
         window.rootViewController = viewController
+        MockData.shared.currentUser = MockData.shared.users.first
     }
 }

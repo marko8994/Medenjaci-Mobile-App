@@ -21,16 +21,46 @@ internal enum Strings {
     internal enum Message {
       /// Are you sure you want to send your current order?
       internal static let confirmOrder = Strings.tr("Localizable", "Alert.Message.ConfirmOrder")
+      /// Address must contain beetween 5 and 50 characters
+      internal static let invalidAddress = Strings.tr("Localizable", "Alert.Message.InvalidAddress")
+      /// Email is not valid
+      internal static let invalidEmail = Strings.tr("Localizable", "Alert.Message.InvalidEmail")
+      /// Name must contain contain beetween 5 and 30 characters
+      internal static let invalidName = Strings.tr("Localizable", "Alert.Message.InvalidName")
+      /// Password must contain at least one uppercased letter and at least one number. Minimum lenght is 8 characters
+      internal static let invalidPassword = Strings.tr("Localizable", "Alert.Message.InvalidPassword")
+      /// Phone number must start with international country phone code. Example +381 for Serbia
+      internal static let invalidPhoneNumber = Strings.tr("Localizable", "Alert.Message.InvalidPhoneNumber")
       /// Maximum quantity of one item in order is 10. If you want to make bigger order,\nplease contact us directly.
       internal static let maximumQuantityOfItemInOrder = Strings.tr("Localizable", "Alert.Message.MaximumQuantityOfItemInOrder")
+      /// Please check your email for reset password link
+      internal static let passwordResetRequestSent = Strings.tr("Localizable", "Alert.Message.PasswordResetRequestSent")
+      /// Entered password are not identical
+      internal static let passwordsAreNotIdentical = Strings.tr("Localizable", "Alert.Message.PasswordsAreNotIdentical")
+      /// User with entered email doesn't exist
+      internal static let userDoesntExist = Strings.tr("Localizable", "Alert.Message.UserDoesntExist")
+      /// Please check your email for confirmation link
+      internal static let userRequestSent = Strings.tr("Localizable", "Alert.Message.UserRequestSent")
     }
     internal enum Title {
       /// Confirm order
       internal static let confirmOrder = Strings.tr("Localizable", "Alert.Title.ConfirmOrder")
+      /// Addres is not valid
+      internal static let invalidAddress = Strings.tr("Localizable", "Alert.Title.InvalidAddress")
+      /// Name is not valid
+      internal static let invalidName = Strings.tr("Localizable", "Alert.Title.InvalidName")
+      /// Password is not valid
+      internal static let invalidPassword = Strings.tr("Localizable", "Alert.Title.InvalidPassword")
+      /// Phone number is not valid
+      internal static let invalidPhoneNumber = Strings.tr("Localizable", "Alert.Title.InvalidPhoneNumber")
       /// Are you sure you want to logut?
       internal static let logoutConfirmation = Strings.tr("Localizable", "Alert.Title.LogoutConfirmation")
+      /// Password reset request sent
+      internal static let passwordResetRequestSent = Strings.tr("Localizable", "Alert.Title.PasswordResetRequestSent")
       /// Sorry
       internal static let sorry = Strings.tr("Localizable", "Alert.Title.Sorry")
+      /// New user request sent
+      internal static let userRequestSent = Strings.tr("Localizable", "Alert.Title.UserRequestSent")
     }
   }
 
@@ -194,6 +224,10 @@ internal enum Strings {
     internal static func itemAddedToCart(_ p1: Any) -> String {
       return Strings.tr("Localizable", "Toast.ItemAddedToCart", String(describing: p1))
     }
+    /// Password changed
+    internal static let passwordChanged = Strings.tr("Localizable", "Toast.PasswordChanged")
+    /// Personal info updated
+    internal static let personalInfoUpdated = Strings.tr("Localizable", "Toast.PersonalInfoUpdated")
   }
 
   internal enum Welcome {

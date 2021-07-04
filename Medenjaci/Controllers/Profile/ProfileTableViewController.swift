@@ -32,7 +32,11 @@ class ProfileTableViewController: UITableViewController {
     
     var sections: [ProfileSection] = [.personalInfo, .updatePersonalInfo, .customerSupport]
     
-    var currentUser = MockData.shared.currentUser
+    var currentUser: User! {
+        didSet {
+            tableView.reloadData()
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +44,11 @@ class ProfileTableViewController: UITableViewController {
         tableView.keyboardDismissMode = .interactive
         tableView.contentInset.bottom = 50
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        currentUser = MockData.shared.currentUser
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -125,16 +134,16 @@ class ProfileTableViewController: UITableViewController {
         let personalInfoRow = PersonalInfoRow(rawValue: indexPath.row)
         switch personalInfoRow {
         case .name:
-            cell.textLabel?.text = currentUser.name
+            cell.textLabel?.text = currentUser?.name
             cell.detailTextLabel?.text = Strings.Common.name
         case .email:
-            cell.textLabel?.text = currentUser.email
+            cell.textLabel?.text = currentUser?.email
             cell.detailTextLabel?.text = Strings.Common.email
         case .address:
-            cell.textLabel?.text = currentUser.address
+            cell.textLabel?.text = currentUser?.address
             cell.detailTextLabel?.text = Strings.Common.address
         case .phoneNumber:
-            cell.textLabel?.text = currentUser.phoneNumber
+            cell.textLabel?.text = currentUser?.phoneNumber
             cell.detailTextLabel?.text = Strings.Common.phoneNumber
         case .none:
             return nil

@@ -34,5 +34,25 @@ class ResetPasswordViewController: UIViewController {
             emailTextField.resignFirstResponder()
         }
     }
-
+    
+    @IBAction func resetPasswordButtonAction(_ sender: Any) {
+        guard let email = emailTextField.text, email.isValidEmail else {
+            let alert = UIAlertController(message: Strings.Alert.Message.invalidEmail)
+            present(alert, animated: false)
+            return
+        }
+        if MockData.shared.users.contains(where: {$0.email == email}) {
+            let okAction = UIAlertAction(title: Strings.Common.ok, style: .default) { _ in
+                self.navigationController?.popViewController(animated: false)
+            }
+            let alert = UIAlertController(title: Strings.Alert.Title.passwordResetRequestSent,
+                                          message: Strings.Alert.Message.passwordResetRequestSent,
+                                          actions: [okAction])
+            present(alert, animated: false)
+        } else {
+            let alert = UIAlertController(message: Strings.Alert.Message.userDoesntExist)
+            present(alert, animated: false)
+            return
+        }
+    }
 }
