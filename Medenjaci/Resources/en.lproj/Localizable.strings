@@ -102,5 +102,8 @@ please contact us directly.";
 "Toast.ItemAddedToCart" = "%@ added to cart";
 "Toast.PersonalInfoUpdated" = "Personal info updated";
 "Toast.PasswordChanged" = "Password changed";
+"Toast.EmptyCustomerRequest" = "Can't send empty customer request";
+"Toast.CantAddToCartWithoutAmount" = "Can't add to cart without amount";
+"Toast.CustomerRequestSent" = "Customer request sent";
 
 

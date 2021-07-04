@@ -291,44 +291,8 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" name="backgroundColor"/>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="supportTextFieldCell" id="4vt-cO-QX4" userLabel="Customer support text field cell" customClass="TextFieldTableCell" customModule="Medenjaci" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="85" width="414" height="54.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4vt-cO-QX4" id="MKX-y8-7Af">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="54.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your customer support request" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SWX-PK-qo9">
-                                            <rect key="frame" x="15" y="5" width="384" height="44.5"/>
-                                            <color key="backgroundColor" name="roundedTextFieldBackgroundColor"/>
-                                            <color key="tintColor" name="primaryTextColor"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="44" id="rVs-1b-IXc"/>
-                                            </constraints>
-                                            <color key="textColor" name="primaryTextColor"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                            <textInputTraits key="textInputTraits"/>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
-                                                    <color key="value" name="placeholderTextColor"/>
-                                                </userDefinedRuntimeAttribute>
-                                            </userDefinedRuntimeAttributes>
-                                        </textField>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="SWX-PK-qo9" secondAttribute="trailing" constant="15" id="8SY-4F-Xp9"/>
-                                        <constraint firstItem="SWX-PK-qo9" firstAttribute="top" secondItem="MKX-y8-7Af" secondAttribute="top" constant="5" id="L15-Q1-Tvm"/>
-                                        <constraint firstAttribute="bottom" secondItem="SWX-PK-qo9" secondAttribute="bottom" constant="5" id="uAH-Pz-x9e"/>
-                                        <constraint firstItem="SWX-PK-qo9" firstAttribute="leading" secondItem="MKX-y8-7Af" secondAttribute="leading" constant="15" id="uCz-nO-Cb3"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <color key="backgroundColor" name="backgroundColor"/>
-                                <connections>
-                                    <outlet property="textField" destination="SWX-PK-qo9" id="5YI-bu-tBm"/>
-                                </connections>
-                            </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="buttonCell" id="Kln-0M-mFg" userLabel="Button cell" customClass="SingleButtonCell" customModule="Medenjaci" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="139.5" width="414" height="54.5"/>
+                                <rect key="frame" x="0.0" y="85" width="414" height="54.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kln-0M-mFg" id="3XL-Mg-D0n">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="54.5"/>
@@ -362,6 +326,67 @@
                                 <color key="backgroundColor" name="backgroundColor"/>
                                 <connections>
                                     <outlet property="button" destination="iWm-Aq-Pjw" id="l37-PS-bqL"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="customerSupportCell" id="shz-gz-veA" userLabel="Customer support cell" customClass="TextFieldAndButtonTableCell" customModule="Medenjaci" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="139.5" width="414" height="103.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="shz-gz-veA" id="vyg-G8-VO3">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="103.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your order notes" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LuC-z0-fpM">
+                                            <rect key="frame" x="15" y="5" width="384" height="44"/>
+                                            <color key="backgroundColor" name="roundedTextFieldBackgroundColor"/>
+                                            <color key="tintColor" name="primaryTextColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="tcp-kl-TwD"/>
+                                            </constraints>
+                                            <color key="textColor" name="primaryTextColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                    <color key="value" name="placeholderTextColor"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <outlet property="delegate" destination="g4R-VK-S4y" id="uaZ-6G-fuV"/>
+                                            </connections>
+                                        </textField>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdv-fl-QCa" userLabel="Customer support button button">
+                                            <rect key="frame" x="15" y="59" width="384" height="44.5"/>
+                                            <color key="backgroundColor" name="primaryButton"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="gTm-Ho-raz"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="tintColor" name="primaryButton"/>
+                                            <state key="normal" title="Send request">
+                                                <color key="titleColor" name="primaryButtonTextColor"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="LuC-z0-fpM" secondAttribute="trailing" constant="15" id="QMi-Lj-AhZ"/>
+                                        <constraint firstAttribute="bottom" secondItem="jdv-fl-QCa" secondAttribute="bottom" id="ZKp-IX-jmI"/>
+                                        <constraint firstItem="jdv-fl-QCa" firstAttribute="top" secondItem="LuC-z0-fpM" secondAttribute="bottom" constant="10" id="gMU-7j-Ltb"/>
+                                        <constraint firstItem="LuC-z0-fpM" firstAttribute="leading" secondItem="vyg-G8-VO3" secondAttribute="leading" constant="15" id="oMt-O9-fyX"/>
+                                        <constraint firstAttribute="trailing" secondItem="jdv-fl-QCa" secondAttribute="trailing" constant="15" id="umb-4q-MWD"/>
+                                        <constraint firstItem="jdv-fl-QCa" firstAttribute="leading" secondItem="vyg-G8-VO3" secondAttribute="leading" constant="15" id="x6W-mO-VYG"/>
+                                        <constraint firstItem="LuC-z0-fpM" firstAttribute="top" secondItem="vyg-G8-VO3" secondAttribute="top" constant="5" id="xCm-7j-6Hd"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="backgroundColor"/>
+                                <connections>
+                                    <outlet property="button" destination="jdv-fl-QCa" id="BMo-qT-uYs"/>
+                                    <outlet property="textField" destination="LuC-z0-fpM" id="4zB-YJ-s2j"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -604,7 +629,7 @@
                                                         </constraints>
                                                         <color key="textColor" name="primaryTextColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                        <textInputTraits key="textInputTraits" textContentType="email"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
                                                                 <integer key="value" value="2"/>
@@ -647,7 +672,7 @@
                                                         </constraints>
                                                         <color key="textColor" name="primaryTextColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                        <textInputTraits key="textInputTraits" textContentType="tel"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
                                                                 <integer key="value" value="2"/>

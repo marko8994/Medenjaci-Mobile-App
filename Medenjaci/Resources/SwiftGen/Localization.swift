@@ -220,6 +220,12 @@ internal enum Strings {
   }
 
   internal enum Toast {
+    /// Can't add to cart without amount
+    internal static let cantAddToCartWithoutAmount = Strings.tr("Localizable", "Toast.CantAddToCartWithoutAmount")
+    /// Customer request sent
+    internal static let customerRequestSent = Strings.tr("Localizable", "Toast.CustomerRequestSent")
+    /// Can't send empty customer request
+    internal static let emptyCustomerRequest = Strings.tr("Localizable", "Toast.EmptyCustomerRequest")
     /// %@ added to cart
     internal static func itemAddedToCart(_ p1: Any) -> String {
       return Strings.tr("Localizable", "Toast.ItemAddedToCart", String(describing: p1))

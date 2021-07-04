@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Toaster
 
 enum ProfileSection: Int {
     case personalInfo = 0
@@ -71,16 +72,16 @@ class ProfileTableViewController: UITableViewController {
         case .updatePersonalInfo:
             return 3
         case .customerSupport:
-            return 2
+            return 1
         }
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         let section = sections[indexPath.section]
         switch section {
-        case .personalInfo:
+        case .personalInfo, .customerSupport:
             return UITableView.automaticDimension
-        case .updatePersonalInfo, .customerSupport:
+        case .updatePersonalInfo:
             return 54
         }
     }
@@ -95,17 +96,19 @@ class ProfileTableViewController: UITableViewController {
             guard let cell = updatePersonalInfoCell(for: indexPath) else { break }
             return cell
         case .customerSupport:
-            if indexPath.row == 0 {
-                guard let cell = tableView.dequeueReusableCell(withIdentifier: "supportTextFieldCell", for: indexPath)
-                    as? TextFieldTableCell else { break }
-                cell.placeholder = Strings.Placeholder.customerRequest
-                return cell
-            } else {
-                guard let cell = tableView.dequeueReusableCell(withIdentifier: "buttonCell", for: indexPath)
-                    as? SingleButtonCell else { break }
-                cell.buttonTitle = Strings.Title.sendRequest
-                return cell
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "customerSupportCell", for: indexPath)
+                as? TextFieldAndButtonTableCell else { break }
+            cell.textFieldPlaceholder = Strings.Placeholder.customerRequest
+            cell.buttonTitle = Strings.Title.sendRequest
+            cell.buttonAction = {
+                guard let customerRequest = cell.textField.text, !customerRequest.isEmpty else {
+                    Toast(text: Strings.Toast.emptyCustomerRequest).show()
+                    return
+                }
+                Toast(text: Strings.Toast.customerRequestSent).show()
+                cell.textField.text = nil
             }
+            return cell
         }
         fatalError("Couldn't find cell for index path: \(String(describing: indexPath))")
     }

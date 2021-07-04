@@ -110,7 +110,10 @@ class ProductDetailsTableViewController: UITableViewController {
         cell.buttonTitle = Strings.Title.addToCart
         cell.textFieldPlaceholder = Strings.Placeholder.itemAmount
         cell.buttonAction = {
-            guard let itemAmount = cell.textField.text, let quantity = Int(itemAmount) else { return }
+            guard let itemAmount = cell.textField.text, let quantity = Int(itemAmount) else {
+                Toast(text: Strings.Toast.cantAddToCartWithoutAmount).show()
+                return
+            }
             guard quantity < 10 else {
                 let alert = UIAlertController(title: Strings.Alert.Title.sorry,
                                               message: Strings.Alert.Message.maximumQuantityOfItemInOrder)
@@ -144,6 +147,11 @@ extension ProductDetailsTableViewController: UITextFieldDelegate {
                    replacementString string: String) -> Bool {
         let allowedCharacters = CharacterSet(charactersIn: "123456789")
         let characterSet = CharacterSet(charactersIn: string)
+        if let textFieldText = textField.text, let rangeOfTextToReplace = Range(range, in: textFieldText) {
+            let substringToReplace = textFieldText[rangeOfTextToReplace]
+            let count = textFieldText.count - substringToReplace.count + string.count
+            return allowedCharacters.isSuperset(of: characterSet) && count <= 2
+        }
         return allowedCharacters.isSuperset(of: characterSet)
     }
 }
