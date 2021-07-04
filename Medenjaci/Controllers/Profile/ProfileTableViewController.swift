@@ -20,6 +20,12 @@ enum PersonalInfoRow: Int {
     case phoneNumber
 }
 
+enum UpdatePersonalInfoRow: Int {
+    case changePersonalInfo
+    case changePassword
+    case logout
+}
+
 class ProfileTableViewController: UITableViewController {
     
     typealias Segues = StoryboardSegue.Main
@@ -54,7 +60,7 @@ class ProfileTableViewController: UITableViewController {
         case .personalInfo:
             return 4
         case .updatePersonalInfo:
-            return 2
+            return 3
         case .customerSupport:
             return 2
         }
@@ -77,19 +83,7 @@ class ProfileTableViewController: UITableViewController {
             guard let cell = personalInfoCell(for: indexPath) else { break }
             return cell
         case .updatePersonalInfo:
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "buttonCell", for: indexPath)
-                as? SingleButtonCell else { break }
-            if indexPath.row == 0 {
-                cell.buttonTitle = Strings.Title.changePersonalInfo
-                cell.buttonAction = {
-                    self.perform(segue: Segues.changePersonalInfo)
-                }
-            } else {
-                cell.buttonTitle = Strings.Title.changePassword
-                cell.buttonAction = {
-                    self.perform(segue: Segues.changePassword)
-                }
-            }
+            guard let cell = updatePersonalInfoCell(for: indexPath) else { break }
             return cell
         case .customerSupport:
             if indexPath.row == 0 {
@@ -147,5 +141,42 @@ class ProfileTableViewController: UITableViewController {
         }
         return cell
     }
-
+    
+    private func updatePersonalInfoCell(for indexPath: IndexPath) -> UITableViewCell? {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "buttonCell", for: indexPath)
+            as? SingleButtonCell else { return nil }
+        let row = UpdatePersonalInfoRow(rawValue: indexPath.row)
+        switch row {
+        case .changePersonalInfo:
+            cell.buttonTitle = Strings.Title.changePersonalInfo
+            cell.buttonAction = {
+                self.perform(segue: Segues.changePersonalInfo)
+            }
+        case .changePassword:
+            cell.buttonTitle = Strings.Title.changePassword
+            cell.buttonAction = {
+                self.perform(segue: Segues.changePassword)
+            }
+        case .logout:
+            cell.buttonTitle = Strings.Title.logut
+            cell.buttonAction = {
+                let cancelAction = UIAlertAction(title: Strings.Common.cancel, style: .cancel)
+                let confirmAction = UIAlertAction(title: Strings.Common.ok, style: .destructive) { _ in
+                    let viewController = StoryboardScene.Registration.initialScene.instantiate()
+                    let window = UIApplication.shared.windows.first!
+                    window.windowLevel = UIWindow.Level.normal
+                    window.rootViewController?.dismiss(animated: false, completion: nil)
+                    window.rootViewController?.removeFromParent()
+                    window.rootViewController = viewController
+                }
+                let alert = UIAlertController(title: Strings.Alert.Title.logoutConfirmation,
+                                              message: nil,
+                                              actions: [cancelAction, confirmAction])
+                self.present(alert, animated: false)
+            }
+        case .none:
+            return nil
+        }
+        return cell
+    }
 }

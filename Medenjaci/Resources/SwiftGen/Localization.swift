@@ -11,6 +11,13 @@ import Foundation
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum Strings {
 
+  internal enum Alert {
+    internal enum Title {
+      /// Are you sure you want to logut?
+      internal static let logoutConfirmation = Strings.tr("Localizable", "Alert.Title.LogoutConfirmation")
+    }
+  }
+
   internal enum Common {
     /// Address
     internal static let address = Strings.tr("Localizable", "Common.Address")
@@ -18,6 +25,8 @@ internal enum Strings {
     internal static let approved = Strings.tr("Localizable", "Common.Approved")
     /// Arrival estimate
     internal static let arrivalEstimate = Strings.tr("Localizable", "Common.ArrivalEstimate")
+    /// Cancel
+    internal static let cancel = Strings.tr("Localizable", "Common.Cancel")
     /// Cart
     internal static let cart = Strings.tr("Localizable", "Common.Cart")
     /// %d$
@@ -50,6 +59,8 @@ internal enum Strings {
     internal static let name = Strings.tr("Localizable", "Common.Name")
     /// New password
     internal static let newPassword = Strings.tr("Localizable", "Common.NewPassword")
+    /// OK
+    internal static let ok = Strings.tr("Localizable", "Common.Ok")
     /// Order date
     internal static let orderDate = Strings.tr("Localizable", "Common.OrderDate")
     /// Order notes:
@@ -146,6 +157,8 @@ internal enum Strings {
     internal static let changePersonalInfo = Strings.tr("Localizable", "Title.ChangePersonalInfo")
     /// Login
     internal static let login = Strings.tr("Localizable", "Title.Login")
+    /// Logut
+    internal static let logut = Strings.tr("Localizable", "Title.Logut")
     /// Order
     internal static let order = Strings.tr("Localizable", "Title.Order")
     /// Order details

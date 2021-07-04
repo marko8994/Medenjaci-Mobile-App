@@ -14,11 +14,14 @@
 "Title.ChangePersonalInfo" = "Change personal info";
 "Title.ChangePassword" = "Change password";
 "Title.Login" = "Login";
+"Title.Logut" = "Logut";
 "Title.Order" = "Order";
 "Title.ResetPassword" = "Reset password";
 "Title.SendRequest" = "Send request";
 "Title.AddToCart" = "Add to cart";
 "Title.OrderDetails" = "Order details";
+"Common.Ok" = "OK";
+"Common.Cancel" = "Cancel";
 "Common.Name" = "Name";
 "Common.Email" = "Email";
 "Common.Address" = "Address";
@@ -69,3 +72,6 @@
 "Section.CustomerSupport" = "Customer support";
 "EmptySection.EmptyCurrentOrder" = "Cart is empty. Go to home page and add products.";
 "EmptySection.NoOlderOrders" = "You don't have old orders.";
+
+// Alerts
+"Alert.Title.LogoutConfirmation" = "Are you sure you want to logut?";

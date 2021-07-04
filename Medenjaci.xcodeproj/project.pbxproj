@@ -55,6 +55,7 @@
 		ADBB6EF325BA55AC0000D5DA /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBB6EF125BA55AC0000D5DA /* Assets.swift */; };
 		ADBB6EF925BA55B70000D5DA /* StoryboardSegues.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBB6EF725BA55B70000D5DA /* StoryboardSegues.swift */; };
 		ADBB6EFA25BA55B70000D5DA /* StoryboardScenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBB6EF825BA55B70000D5DA /* StoryboardScenes.swift */; };
+		ADE003972691EF2000470E79 /* AlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE003962691EF2000470E79 /* AlertController+Extension.swift */; };
 		FC49561CCDD7B9F7F22D2C1E /* libPods-Medenjaci.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 535EB3E617141D6EC67BA25A /* libPods-Medenjaci.a */; };
 /* End PBXBuildFile section */
 
@@ -137,6 +138,7 @@
 		ADBB6EF125BA55AC0000D5DA /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		ADBB6EF725BA55B70000D5DA /* StoryboardSegues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardSegues.swift; sourceTree = "<group>"; };
 		ADBB6EF825BA55B70000D5DA /* StoryboardScenes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardScenes.swift; sourceTree = "<group>"; };
+		ADE003962691EF2000470E79 /* AlertController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlertController+Extension.swift"; sourceTree = "<group>"; };
 		C80064622F53AA45C526E4B0 /* libPods-Medenjaci-MedenjaciUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Medenjaci-MedenjaciUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -240,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				AD947E4B25C8E7EE00FFFB1D /* Date+Extension.swift */,
+				ADE003962691EF2000470E79 /* AlertController+Extension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -618,6 +621,7 @@
 				AD16D0CD25C4F26900CA9C57 /* LoginViewController.swift in Sources */,
 				AD16D13425C5CD7E00CA9C57 /* Category.swift in Sources */,
 				AD16D12F25C5CCD400CA9C57 /* HomeModel.swift in Sources */,
+				ADE003972691EF2000470E79 /* AlertController+Extension.swift in Sources */,
 				AD16D11A25C5C0F400CA9C57 /* BasicCollectionCell.swift in Sources */,
 				AD947C7E25C7731F00FFFB1D /* User.swift in Sources */,
 				AD16D12725C5CCC000CA9C57 /* MockData.swift in Sources */,
